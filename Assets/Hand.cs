@@ -8,7 +8,7 @@ public class Hand : MovableLimb
 {
 	[Tooltip("How long this hand will keep holding on to the handle, after the player has taken control over it.")]
     public float delayBeforeLettingGo;
-
+	bool willSwitchToIK;	// Used to determine whether the hand still wants to switch over to IK. True while controlled, false when not controlled.
 
     // Indicates whether the limb could currently hold on to a handle.
     bool overHandle;
@@ -53,6 +53,8 @@ public class Hand : MovableLimb
     {
 	base.SetControlled(controlled);
 
+	willSwitchToIK = controlled;
+
         if (controlled)
         {
             StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
@@ -66,8 +68,15 @@ public class Hand : MovableLimb
 
 	IEnumerator SwitchToFKAfterTime(float time)
 	{
-		yield return new WaitForSeconds(time);
-		SwitchToFK(this);
+		float startTime = Time.time;
+		while(Time.time < startTime + time)
+		{
+			if(!willSwitchToIK)
+				break;
+			yield return null;	
+		}
+		if(willSwitchToIK)
+			SwitchToFK(this);
 	}
 	
     override public void SwitchToIK(Limb sender)
