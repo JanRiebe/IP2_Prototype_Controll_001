@@ -108,7 +108,8 @@ public abstract class MovableLimb : Limb
 
     protected virtual void SetControlled(bool controlled)
 	{
-		timeOfTakingControl = Time.time;
+		if(controlled)
+			timeOfTakingControl = Time.time;
 	}
 
     /// <summary>

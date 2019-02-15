@@ -6,7 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(TargetJoint2D))]
 public class Hand : MovableLimb
 {
-    
+	[Tooltip("How long this hand will keep holding on to the handle, after the player has taken control over it.")]
+    public float delayBeforeLettingGo;
+
+
     // Indicates whether the limb could currently hold on to a handle.
     bool overHandle;
 	
@@ -48,10 +51,11 @@ public class Hand : MovableLimb
     /// <param name="controlled">Whether the player controlls this limb.</param>
     override protected void SetControlled(bool controlled)
     {
-		
+	base.SetControlled(controlled);
+
         if (controlled)
         {
-            SwitchToFK(this);
+            StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
         }
         else
         {
@@ -60,7 +64,11 @@ public class Hand : MovableLimb
         }
     }
 
-
+	IEnumerator SwitchToFKAfterTime(float time)
+	{
+		yield return new WaitForSeconds(time);
+		SwitchToFK(this);
+	}
 	
     override public void SwitchToIK(Limb sender)
 	{
