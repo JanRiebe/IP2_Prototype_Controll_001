@@ -21,13 +21,13 @@ public abstract class MovableLimb : Limb
     public ActivationAxis[] activationInputs;
 	
 	
-    public float tmpForce;
+    public float strength;
 
 	protected Limb parent;
 
 
 
-	/*
+	
     [System.Serializable]
     public class Attack
     {
@@ -40,7 +40,9 @@ public abstract class MovableLimb : Limb
 
     [Tooltip("How forces act on the limb over time when the player makes an input.")]
     public Attack attack;
-	*/
+	
+
+	float timeOfTakingControl;	// The time at which the limb last started to be controlled by the player.
 
 
     float forceFactor = 1;	// Determins if and how much a limb is currently controlled by directional input.
@@ -106,8 +108,7 @@ public abstract class MovableLimb : Limb
 
     protected virtual void SetControlled(bool controlled)
 	{
-		//Debug.Log("Currently only hands can use this function.");
-		// Note: This function is left here in case we change the way input is connected to the de/activation of limbs in the future.
+		timeOfTakingControl = Time.time;
 	}
 
     /// <summary>
@@ -118,8 +119,7 @@ public abstract class MovableLimb : Limb
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        //TODO use time and curve of attack
-        rb.AddForce(direction.normalized * tmpForce * forceFactor);
+        rb.AddForce(direction.normalized * strength * forceFactor * AttackRightNow());
     }
 
     
@@ -161,6 +161,13 @@ public abstract class MovableLimb : Limb
             
         ForceDirection(dir);
         
-    //TODO think about whether I should use sin and cos to determin the direction instead.
     }
+
+
+	float AttackRightNow()
+	{
+		float timePassed = Time.time - timeOfTakingControl;
+		float progress = Mathf.Min(1.0f, timePassed/attack.attackTime);
+		return attack.attackOverTime.Evaluate(progress);
+	}
 }
