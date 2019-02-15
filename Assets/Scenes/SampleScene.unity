@@ -269,6 +269,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  delayBeforeLettingGo: 2
 --- !u!257 &31987044
 TargetJoint2D:
   m_ObjectHideFlags: 0
@@ -367,6 +368,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  delayBeforeLettingGo: 0
 --- !u!70 &43014996
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -697,6 +699,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  delayBeforeLettingGo: 0
 --- !u!1 &383428797
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,16 +942,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16123f6cf03817f4493033fe984d9122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs: []
-  strength: 0
+  activationInputs:
+  - name: Fire3
+    influence: 1
+  strength: 20
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  delayBeforeLettingGo: 1
 --- !u!70 &503623389
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1100,20 +1124,20 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0.0027236938
         value: 0.99998856
-        inSlope: -2.2563512
-        outSlope: -2.2563512
+        inSlope: 0.05140649
+        outSlope: 0.05140649
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
-        outWeight: 0.057454545
+        outWeight: 0.39455783
       - serializedVersion: 3
         time: 0.9972534
         value: -0.0057296753
-        inSlope: -0.1371446
-        outSlope: -0.1371446
+        inSlope: -2.319861
+        outSlope: -2.319861
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.29131022
+        inWeight: 0.0761905
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -1876,13 +1900,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs: []
-  strength: 0
+  activationInputs:
+  - name: Fire3
+    influence: 1
+  strength: 50
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2068,13 +2112,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs: []
-  strength: 0
+  activationInputs:
+  - name: Fire3
+    influence: 1
+  strength: 30
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
