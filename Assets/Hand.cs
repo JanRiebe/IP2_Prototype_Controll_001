@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(DistanceJoint2D))]
+[RequireComponent(typeof(HingeJoint2D))]
 [RequireComponent(typeof(TargetJoint2D))]
 public class Hand : MovableLimb
 {
@@ -13,14 +13,14 @@ public class Hand : MovableLimb
     // Indicates whether the limb could currently hold on to a handle.
     bool overHandle;
 	
-	DistanceJoint2D distJoint;
+	HingeJoint2D distJoint;
 	TargetJoint2D targetJoint;
 
 
 	override protected void Initialise()
 	{
 		base.Initialise();
-		distJoint = GetComponent<DistanceJoint2D>();
+		distJoint = GetComponent<HingeJoint2D>();
 		targetJoint = GetComponent<TargetJoint2D>();
         parent = distJoint.connectedBody.GetComponent<Limb>();
 	}
