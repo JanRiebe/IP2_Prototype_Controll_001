@@ -16,6 +16,25 @@ public class Hand : MovableLimb
 	DistanceJoint2D distJoint;
 	TargetJoint2D targetJoint;
 
+	public Transform shoulder;
+	float maxDistanceToShoulder;
+
+	bool contr = false;
+
+	bool holdingOn = true;
+
+	bool reachedTop;
+
+	void Update()
+	{
+		if(contr)
+		{
+			GetComponent<SpriteRenderer>().color = Color.red;
+		}
+		else
+			GetComponent<SpriteRenderer>().color = Color.white;
+	}
+
 
 	override protected void Initialise()
 	{
@@ -23,14 +42,19 @@ public class Hand : MovableLimb
 		distJoint = GetComponent<DistanceJoint2D>();
 		targetJoint = GetComponent<TargetJoint2D>();
         parent = distJoint.connectedBody.GetComponent<Limb>();
+
+		maxDistanceToShoulder = CalculateDistanceToShoulder();
 	}
 
 
 	private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Handle")
+		Debug.Log("OnTriggerEnter2D "+collision.name);
+        if(collision.tag == "Handle" && reachedTop)
         {
             overHandle = true;
+			SwitchToIK(this);
+			holdingOn = true;
         }
     }
 
@@ -42,6 +66,18 @@ public class Hand : MovableLimb
         }
     }
 
+	// On button pressed.
+	public void ActivateControl()
+	{
+		contr = true;
+		//StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
+	}
+
+	// On button released.
+	public void DeactivateControl()
+	{
+		contr = false;
+	}
 
 
 	/// <summary>
@@ -51,9 +87,11 @@ public class Hand : MovableLimb
     /// <param name="controlled">Whether the player controlls this limb.</param>
     override protected void SetControlled(bool controlled)
     {
-	base.SetControlled(controlled);
+	/*
+		base.SetControlled(controlled);
+		contr = controlled;
 
-	willSwitchToIK = controlled;
+		willSwitchToIK = controlled;
 
         if (controlled)
         {
@@ -61,11 +99,12 @@ public class Hand : MovableLimb
         }
         else
         {
-		if (overHandle)
-                SwitchToIK(this);
+		//if (overHandle)
+        //        SwitchToIK(this);
         }
+		*/
     }
-
+	
 	IEnumerator SwitchToFKAfterTime(float time)
 	{
 		float startTime = Time.time;
@@ -77,6 +116,7 @@ public class Hand : MovableLimb
 		}
 		if(willSwitchToIK)
 			SwitchToFK(this);
+		willSwitchToIK = false;
 	}
 	
     override public void SwitchToIK(Limb sender)
@@ -92,5 +132,32 @@ public class Hand : MovableLimb
 		distJoint.enabled = true;
 		targetJoint.enabled = false;
 		parent.SwitchToFK(this);
+	}
+
+	public void Fire(float angle)
+	{
+		//if(holdingOn)
+		//	return;
+
+		Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+		StartCoroutine(TargetMover(dir, 1.5f));
+		//SetControlled(false);
+		holdingOn = false;
+	}
+
+	IEnumerator TargetMover(Vector2 direction, float speed)
+	{
+		while (maxDistanceToShoulder > CalculateDistanceToShoulder())
+		{
+			targetJoint.target += direction*speed*Time.deltaTime;
+			yield return null;
+		}
+		SwitchToFK(this);
+		reachedTop = true;
+	}
+
+	float CalculateDistanceToShoulder()
+	{
+		return Vector3.Distance(shoulder.position, transform.position);
 	}
 }

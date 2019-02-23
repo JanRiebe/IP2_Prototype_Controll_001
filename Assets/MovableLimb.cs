@@ -59,6 +59,7 @@ public abstract class MovableLimb : Limb
       // Update is called once per frame
     void Update()
     {
+	/*
         // Calculating the force factor.
         forceFactor = 0.0f;
         bool isControlledByPlayer = false;
@@ -100,9 +101,13 @@ public abstract class MovableLimb : Limb
             ForceRotation(true);
         if (Input.GetKey(KeyCode.E))
             ForceRotation(false);
+			*/
     }
 
-
+	public void Controlled(bool c)
+	{
+		SetControlled(c);
+	}
 
 	
 
@@ -131,9 +136,9 @@ public abstract class MovableLimb : Limb
         // to create the illusion of rotation.
         if (parent == null)
             Debug.Log("Parent null on " + name);
-        Vector2 limbDirection = transform.position - parent.transform.position;
+
         // The angle between this limb and the x-axis, -180 to 180
-        float angle = Vector2.SignedAngle(Vector2.right, limbDirection);
+        float angle = CalculateAngleToParent();
         /* Angles in the coordinate system relative to parent limb.
          * Imagine this limb to rotate around P and be in on of the four quadrants.
          * 
@@ -165,6 +170,7 @@ public abstract class MovableLimb : Limb
     }
 
 
+
 	float AttackRightNow()
 	{
 		float timePassed = Time.time - timeOfTakingControl;
@@ -172,5 +178,13 @@ public abstract class MovableLimb : Limb
 		return attack.attackOverTime.Evaluate(progress);
 	}
 
-	
+	/// <summary>
+    /// Calculates the angle between this limb and the parent limb.
+    /// </summary>
+    /// <return> The angle between this limb and the x-axis, -180 to 180 </return>
+	float CalculateAngleToParent()
+	{
+		Vector2 limbDirection = transform.position - parent.transform.position;
+        return Vector2.SignedAngle(Vector2.right, limbDirection);
+	}
 }
