@@ -4,6 +4,10 @@ using UnityEngine;
 
 public abstract class MovableLimb : Limb
 {
+
+	
+	
+
     [System.Serializable]
     public class ActivationAxis
     {
@@ -52,18 +56,9 @@ public abstract class MovableLimb : Limb
         rb = GetComponent<Rigidbody2D>();
     }
 
-    //Public string to allow multiple player set up in inspector
-    public string axis_Horizontal;
-    public string axis_Vertical;
-
-    // Update is called once per frame
+      // Update is called once per frame
     void Update()
     {
-        //Setting
-        float axisMoveHorizontal = Input.GetAxis(axis_Horizontal);
-        float axisMoveVertical = Input.GetAxis(axis_Vertical);
-
-
         // Calculating the force factor.
         forceFactor = 0.0f;
         bool isControlledByPlayer = false;
@@ -91,9 +86,7 @@ public abstract class MovableLimb : Limb
 		else
 			GetComponent<SpriteRenderer>().color = Color.white;
 
-        //Previous PC controls
         //TODO move these in input control script, that calls force functions
-        /*
         if (Input.GetKey(KeyCode.UpArrow))
             ForceDirection(Vector2.up);
         if (Input.GetKey(KeyCode.DownArrow))
@@ -102,23 +95,11 @@ public abstract class MovableLimb : Limb
             ForceDirection(Vector2.left);
         if (Input.GetKey(KeyCode.RightArrow))
             ForceDirection(Vector2.right);
-            */
 
         if (Input.GetKey(KeyCode.Q))
             ForceRotation(true);
         if (Input.GetKey(KeyCode.E))
             ForceRotation(false);
-
-        //Checking the horizontal/verical axis to apply correct force
-        if (axisMoveHorizontal > 0.5)
-            ForceDirection(Vector2.right);
-        if (axisMoveHorizontal < -0.5)
-            ForceDirection(Vector2.left);
-        if (axisMoveVertical > 0.5)
-            ForceDirection(Vector2.up);
-        if (axisMoveVertical < -0.5)
-            ForceDirection(Vector2.down);
-
     }
 
 
