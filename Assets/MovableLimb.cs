@@ -51,9 +51,17 @@ public abstract class MovableLimb : Limb
 	
 	bool wasControlledInPreviousUpdate = false;		//TODO find more elegant solution
 
+
+	GruntOnDemand gruntOnDemand;
+
+
+
+
+
     override protected void Initialise()
     {
         rb = GetComponent<Rigidbody2D>();
+		gruntOnDemand = GetComponent<GruntOnDemand>();
     }
 
       // Update is called once per frame
@@ -87,6 +95,8 @@ public abstract class MovableLimb : Limb
 			GetComponent<SpriteRenderer>().color = Color.white;
 
         //TODO move these in input control script, that calls force functions
+		if(isControlledByPlayer)
+		{
         if (Input.GetKey(KeyCode.UpArrow))
             ForceDirection(Vector2.up);
         if (Input.GetKey(KeyCode.DownArrow))
@@ -95,6 +105,7 @@ public abstract class MovableLimb : Limb
             ForceDirection(Vector2.left);
         if (Input.GetKey(KeyCode.RightArrow))
             ForceDirection(Vector2.right);
+			}
 			/*
         if (Input.GetKey(KeyCode.Q))
             ForceRotation(true);
@@ -110,7 +121,10 @@ public abstract class MovableLimb : Limb
     public virtual void SetControlled(bool controlled)
 	{
 		if(controlled)
+		{
 			timeOfTakingControl = Time.time;
+			//gruntOnDemand.PleaseGruntNow();
+		}
 	}
 
     /// <summary>
@@ -122,6 +136,8 @@ public abstract class MovableLimb : Limb
     public void ForceDirection(Vector2 direction)
     {
         rb.AddForce(direction.normalized * strength * forceFactor/* * AttackRightNow()*/);
+		if(gruntOnDemand)
+		gruntOnDemand.PleaseGruntNow();
     }
 
     
@@ -172,6 +188,9 @@ public abstract class MovableLimb : Limb
 		float progress = Mathf.Min(1.0f, timePassed/attack.attackTime);
 		return attack.attackOverTime.Evaluate(progress);
 	}
+
+
+
 
 	
 }
