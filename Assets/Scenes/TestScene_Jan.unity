@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,17 +266,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activationInputs:
   - name: Fire1
-    influence: 0
-  strength: 0
+    influence: 1
+  strength: 50
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  delayBeforeLettingGo: 2
+  delayBeforeLettingGo: 0
 --- !u!257 &31987044
 TargetJoint2D:
   m_ObjectHideFlags: 0
@@ -292,7 +310,7 @@ TargetJoint2D:
   m_BreakTorque: Infinity
   m_Anchor: {x: 0, y: 0}
   m_Target: {x: 0.882, y: 0.459}
-  m_AutoConfigureTarget: 1
+  m_AutoConfigureTarget: 0
   m_MaxForce: 10000
   m_DampingRatio: 1
   m_Frequency: 5
@@ -371,8 +389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationInputs:
-  - name: Fire1
-    influence: 0
+  - name: Fire3
+    influence: 1
   strength: 0
   attack:
     attackTime: 1
@@ -647,7 +665,7 @@ TargetJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -0.901, y: 0.289}
+  m_Target: {x: -0.907, y: 0.33}
   m_AutoConfigureTarget: 0
   m_MaxForce: 10000
   m_DampingRatio: 1
@@ -721,18 +739,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationInputs:
-  - name: Fire1
-    influence: 0
-  strength: 0
+  - name: Fire2
+    influence: 1
+  strength: 50
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  delayBeforeLettingGo: 2
+  delayBeforeLettingGo: 0
 --- !u!1 &383428797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,8 +1131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationInputs:
-  - name: Fire1
-    influence: 0
+  - name: Fire3
+    influence: 1
   strength: 0
   attack:
     attackTime: 1
@@ -1254,10 +1290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs:
-  - name: Fire1
-    influence: 1
-  strength: 70
+  activationInputs: []
+  strength: 1
   attack:
     attackTime: 5
     attackOverTime:
@@ -1752,6 +1786,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -194.83}
+--- !u!1 &787722029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787722031}
+  - component: {fileID: 787722030}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &787722030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787722029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22803e139db816b4ebb82aea40103a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputs:
+  - inputAxis: 
+    controlledLimb: {fileID: 0}
+--- !u!4 &787722031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787722029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.020982318, y: 0.18800282, z: -0.029396726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963591966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,8 +2696,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645619825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 17.2, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalPosition: {x: 0.45, y: -0.39, z: 0}
+  m_LocalScale: {x: 100, y: 2.8504243, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -2758,9 +2838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs:
-  - name: Fire1
-    influence: 1
+  activationInputs: []
   strength: 0
   attack:
     attackTime: 1

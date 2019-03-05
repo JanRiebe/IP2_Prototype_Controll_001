@@ -12,6 +12,7 @@ public class Hand : MovableLimb
 
     // Indicates whether the limb could currently hold on to a handle.
     bool overHandle;
+	bool isControlled;
 	
 	DistanceJoint2D distJoint;
 	TargetJoint2D targetJoint;
@@ -31,6 +32,8 @@ public class Hand : MovableLimb
         if(collision.tag == "Handle")
         {
             overHandle = true;
+			if(!isControlled)
+				SwitchToIK(this);
         }
     }
 
@@ -54,16 +57,15 @@ public class Hand : MovableLimb
 	base.SetControlled(controlled);
 
 	willSwitchToIK = controlled;
+	isControlled = controlled;
 
         if (controlled)
         {
             StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
         }
-        else
-        {
-		if (overHandle)
-                SwitchToIK(this);
-        }
+		
+        else if (overHandle)
+            SwitchToIK(this);
     }
 
 	IEnumerator SwitchToFKAfterTime(float time)
