@@ -1618,8 +1618,8 @@ GameObject:
   - component: {fileID: 766888837}
   - component: {fileID: 766888836}
   - component: {fileID: 766888835}
-  - component: {fileID: 766888834}
   - component: {fileID: 766888833}
+  - component: {fileID: 766888834}
   m_Layer: 0
   m_Name: Leg_L_up
   m_TagString: Untagged
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 766888832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa335cd9fd7d714890a4bb7714589f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activationInputs: []
@@ -1815,9 +1815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22803e139db816b4ebb82aea40103a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputs:
-  - inputAxis: 
-    controlledLimb: {fileID: 0}
 --- !u!4 &787722031
 Transform:
   m_ObjectHideFlags: 0
@@ -1845,8 +1842,8 @@ GameObject:
   - component: {fileID: 963591967}
   - component: {fileID: 963591971}
   - component: {fileID: 963591970}
-  - component: {fileID: 963591969}
   - component: {fileID: 963591968}
+  - component: {fileID: 963591969}
   m_Layer: 0
   m_Name: Leg_L_low
   m_TagString: Untagged
@@ -1903,7 +1900,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963591966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa335cd9fd7d714890a4bb7714589f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activationInputs: []
@@ -2207,8 +2204,8 @@ GameObject:
   - component: {fileID: 1564070979}
   - component: {fileID: 1564070978}
   - component: {fileID: 1564070977}
-  - component: {fileID: 1564070976}
   - component: {fileID: 1564070975}
+  - component: {fileID: 1564070976}
   m_Layer: 0
   m_Name: Leg_R_up
   m_TagString: Untagged
@@ -2244,36 +2241,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564070974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa335cd9fd7d714890a4bb7714589f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs:
-  - name: Fire3
-    influence: 1
-  strength: 50
+  activationInputs: []
+  strength: 0
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2408,8 +2385,8 @@ GameObject:
   - component: {fileID: 1590951379}
   - component: {fileID: 1590951383}
   - component: {fileID: 1590951382}
-  - component: {fileID: 1590951381}
   - component: {fileID: 1590951380}
+  - component: {fileID: 1590951381}
   m_Layer: 0
   m_Name: Leg_R_low
   m_TagString: Untagged
@@ -2466,36 +2443,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590951378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f2931e49ff8f468cef4c2677f5490, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa335cd9fd7d714890a4bb7714589f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationInputs:
-  - name: Fire3
-    influence: 1
-  strength: 30
+  activationInputs: []
+  strength: 0
   attack:
     attackTime: 1
     attackOverTime:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -3057,6 +3014,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705d3cb5490169243b1768b2c5084ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activationInputs:
+  - name: Jump
+    influence: 1
+  strength: 0
+  attack:
+    attackTime: 1
+    attackOverTime:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!232 &2115106753
 DistanceJoint2D:
   m_ObjectHideFlags: 0

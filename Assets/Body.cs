@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Body : Limb
+public class Body : MovableLimb
 {
 
 	DistanceJoint2D[] distJoints;
     
 	override protected void Initialise()
 	{
+		base.Initialise();
 		distJoints = GetComponents<DistanceJoint2D>();
 	}
 
