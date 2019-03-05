@@ -47,9 +47,9 @@ public abstract class MovableLimb : Limb
 
     float forceFactor = 1;	// Determins if and how much a limb is currently controlled by directional input.
 
-    Rigidbody2D rb;
+    protected Rigidbody2D rb;
 	
-	bool wasControlledInPreviousUpdate = true;		//TODO find more elegant solution
+	bool wasControlledInPreviousUpdate = false;		//TODO find more elegant solution
 
     override protected void Initialise()
     {
@@ -95,18 +95,19 @@ public abstract class MovableLimb : Limb
             ForceDirection(Vector2.left);
         if (Input.GetKey(KeyCode.RightArrow))
             ForceDirection(Vector2.right);
-
+			/*
         if (Input.GetKey(KeyCode.Q))
             ForceRotation(true);
         if (Input.GetKey(KeyCode.E))
             ForceRotation(false);
+			*/
     }
 
 
 
 	
 
-    protected virtual void SetControlled(bool controlled)
+    public virtual void SetControlled(bool controlled)
 	{
 		if(controlled)
 			timeOfTakingControl = Time.time;
@@ -120,11 +121,11 @@ public abstract class MovableLimb : Limb
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        rb.AddForce(direction.normalized * strength * forceFactor * AttackRightNow());
+        rb.AddForce(direction.normalized * strength * forceFactor/* * AttackRightNow()*/);
     }
 
     
-
+	/*
     public void ForceRotation(bool clockwise)
     {
         // Applies a directional force, depending on the vector to the limb it is dangling from,
@@ -144,7 +145,7 @@ public abstract class MovableLimb : Limb
          * x = x-axis
          * P = parent limb
          */
-         
+         /*
         // Setting the direction to apply force in depending on the roation.
         Vector2 dir = Vector2.zero;
         if (angle > 90)
@@ -163,7 +164,7 @@ public abstract class MovableLimb : Limb
         ForceDirection(dir);
         
     }
-
+	*/
 
 	float AttackRightNow()
 	{

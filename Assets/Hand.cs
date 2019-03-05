@@ -52,12 +52,12 @@ public class Hand : MovableLimb
     /// Causes the limb to switch between FK and IK.
     /// </summary>
     /// <param name="controlled">Whether the player controlls this limb.</param>
-    override protected void SetControlled(bool controlled)
+    override public void SetControlled(bool controlled)
     {
-	base.SetControlled(controlled);
+		base.SetControlled(controlled);
 
-	willSwitchToIK = controlled;
-	isControlled = controlled;
+		willSwitchToIK = controlled;
+		isControlled = controlled;
 
         if (controlled)
         {
