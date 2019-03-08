@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Killer
   - Handle
-  - Hand
   layers:
   - Default
   - TransparentFX

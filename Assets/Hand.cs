@@ -15,14 +15,18 @@ public class Hand : MovableLimb
 	bool isControlled;
 	
 	DistanceJoint2D distJoint;
-	TargetJoint2D targetJoint;
+    TargetJoint2D targetJoint;
+    HingeJoint2D hinge;
+
+    Rigidbody2D currentHandle;
 
 
-	override protected void Initialise()
+    override protected void Initialise()
 	{
 		base.Initialise();
 		distJoint = GetComponent<DistanceJoint2D>();
-		targetJoint = GetComponent<TargetJoint2D>();
+        targetJoint = GetComponent<TargetJoint2D>();
+        hinge = GetComponent<HingeJoint2D>();
         parent = distJoint.connectedBody.GetComponent<Limb>();
 	}
 
@@ -32,6 +36,7 @@ public class Hand : MovableLimb
         if(collision.tag == "Handle")
         {
             overHandle = true;
+            currentHandle = collision.GetComponent<Rigidbody2D>();
 			if(!isControlled)
 				SwitchToIK(this);
         }
@@ -41,6 +46,7 @@ public class Hand : MovableLimb
     {
         if (collision.tag == "Handle")
         {
+            currentHandle = null;
             overHandle = false;
         }
     }
@@ -84,8 +90,11 @@ public class Hand : MovableLimb
     override public void SwitchToIK(Limb sender)
 	{
 		distJoint.enabled = false;
-		targetJoint.enabled = true;
-		targetJoint.target = transform.position;
+        //targetJoint.enabled = true;
+        //targetJoint.target = transform.position;
+        hinge.enabled = true;
+        if (currentHandle)
+            hinge.connectedBody = currentHandle;
 		parent.SwitchToIK(this);
 	}
 
