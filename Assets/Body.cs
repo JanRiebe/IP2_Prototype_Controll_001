@@ -29,8 +29,6 @@ public class Body : MovableLimb
     override protected void SwitchToIK(MovableLimb sender)
 	{
 		
-		Debug.Log("SwitchToIK on "+name+", sender "+sender.name);
-
 		HingeJoint2D connected = FindJointConnectedToSender(sender);
 		if(connected != null)
 			connected.enabled = true;
@@ -42,8 +40,6 @@ public class Body : MovableLimb
 
     override protected void SwitchToFK(MovableLimb sender)
 	{
-		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
-
 		HingeJoint2D connected = FindJointConnectedToSender(sender);
 		if(connected != null)
 			connected.enabled = false;

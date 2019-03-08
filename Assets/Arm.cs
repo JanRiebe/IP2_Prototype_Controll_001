@@ -28,8 +28,6 @@ public class Arm : MovableLimb
 
     override protected void SwitchToIK(MovableLimb sender)
 	{
-		Debug.Log("SwitchToIK on "+name+", sender "+sender. name);
-
 		_connectionToParent.enabled = false;
 		_connectionToChild.enabled = true;
 
@@ -38,8 +36,6 @@ public class Arm : MovableLimb
 
     override protected void SwitchToFK(MovableLimb sender)
     {
-		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
-
 		_connectionToParent.enabled = true;
 		_connectionToChild.enabled = false;
 

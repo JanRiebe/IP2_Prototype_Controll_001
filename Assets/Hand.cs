@@ -77,8 +77,6 @@ public class Hand : MovableLimb
 	
     override protected void SwitchToIK(MovableLimb sender)
 	{
-		Debug.Log("SwitchToIK on "+name+", sender "+sender.name);
-
 		// Switch on the joint for connecting to handholds.
 		_connectionToHandhold.enabled = true;
 		// Assign the handhold as connected body.
@@ -91,8 +89,6 @@ public class Hand : MovableLimb
 
     override protected void SwitchToFK(MovableLimb sender)
 	{	
-		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
-
 		// Switch off the joint for connecting to handholds.
 		_connectionToHandhold.enabled = false;
 		// Assign null as connected body.
