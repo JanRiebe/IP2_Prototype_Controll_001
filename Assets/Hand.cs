@@ -15,7 +15,7 @@ public class Hand : MovableLimb
 	bool isControlled;
 	
 	DistanceJoint2D distJoint;
-    TargetJoint2D targetJoint;
+    //TargetJoint2D targetJoint;
     HingeJoint2D hinge;
 
     Rigidbody2D currentHandle;
@@ -25,7 +25,7 @@ public class Hand : MovableLimb
 	{
 		base.Initialise();
 		distJoint = GetComponent<DistanceJoint2D>();
-        targetJoint = GetComponent<TargetJoint2D>();
+        //targetJoint = GetComponent<TargetJoint2D>();
         hinge = GetComponent<HingeJoint2D>();
         parent = distJoint.connectedBody.GetComponent<Limb>();
 	}
@@ -101,7 +101,8 @@ public class Hand : MovableLimb
     override public void SwitchToFK(Limb sender)
 	{	
 		distJoint.enabled = true;
-		targetJoint.enabled = false;
+		//targetJoint.enabled = false;
+		hinge.enabled = false;
 		parent.SwitchToFK(this);
 	}
 }
