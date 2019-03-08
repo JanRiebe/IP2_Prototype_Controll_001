@@ -5,13 +5,13 @@ using UnityEngine;
 public class Body : MovableLimb
 {
 
-	DistanceJoint2D[] distJoints;
+	HingeJoint2D[] hinges;
 	TargetJoint2D targetJoint;
     
 	override protected void Initialise()
 	{
 		base.Initialise();
-		distJoints = GetComponents<DistanceJoint2D>();
+		hinges = GetComponents<HingeJoint2D>();
 		targetJoint = GetComponent<TargetJoint2D>();
 	}
 
@@ -26,9 +26,12 @@ public class Body : MovableLimb
     }
 
 
-    override public void SwitchToIK(Limb sender)
+    override protected void SwitchToIK(MovableLimb sender)
 	{
-		DistanceJoint2D connected = FindJointConnectedToSender(sender);
+		
+		Debug.Log("SwitchToIK on "+name+", sender "+sender.name);
+
+		HingeJoint2D connected = FindJointConnectedToSender(sender);
 		if(connected != null)
 			connected.enabled = true;
 		// If any of the other limbs take controll, the body stops holing on to it's position.
@@ -37,18 +40,20 @@ public class Body : MovableLimb
 
 
 
-    override public void SwitchToFK(Limb sender)
+    override protected void SwitchToFK(MovableLimb sender)
 	{
-		DistanceJoint2D connected = FindJointConnectedToSender(sender);
+		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
+
+		HingeJoint2D connected = FindJointConnectedToSender(sender);
 		if(connected != null)
 			connected.enabled = false;
 	}
 
 
 
-	DistanceJoint2D FindJointConnectedToSender(Limb sender)
+	HingeJoint2D FindJointConnectedToSender(MovableLimb sender)
 	{
-		foreach(DistanceJoint2D j in distJoints)
+		foreach(HingeJoint2D j in hinges)
 		{
 			if(j.connectedBody == sender.GetComponent<Rigidbody2D>())
 			return j;

@@ -2,44 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(DistanceJoint2D))]
+[RequireComponent(typeof(HingeJoint2D))]
 public class Arm : MovableLimb
 {
+	[SerializeField]
+	MovableLimb _parentLimb, _childLimb;
 
-	//public Limb child;
-    DistanceJoint2D[] distJoints;
-    //DistanceJoint2D childJoint;
-
+	HingeJoint2D _connectionToParent;
+	HingeJoint2D _connectionToChild;
 
     override protected void Initialise()
 	{
 		base.Initialise();
-        distJoints = GetComponents<DistanceJoint2D>();
+
+		parent = _parentLimb;
+
+		HingeJoint2D[] hinges = GetComponents<HingeJoint2D>();
+		_connectionToParent = hinges[0];
+		_connectionToChild = hinges[1];
+		_connectionToParent.connectedBody = _parentLimb.GetComponent<Rigidbody2D>();
+		_connectionToChild.connectedBody = _childLimb.GetComponent<Rigidbody2D>();
+		_connectionToParent.enabled = true;
+		_connectionToChild.enabled = false;
 	}
 
-    override public void SwitchToIK(Limb sender)
+    override protected void SwitchToIK(MovableLimb sender)
 	{
-        SwitchDirection(true, sender);
-		parent.SwitchToIK(this);
+		Debug.Log("SwitchToIK on "+name+", sender "+sender. name);
+
+		_connectionToParent.enabled = false;
+		_connectionToChild.enabled = true;
+
+		base.SwitchToIK(this);
 	}
 
-    override public void SwitchToFK(Limb sender)
+    override protected void SwitchToFK(MovableLimb sender)
     {
-        SwitchDirection(false, sender);
-        parent.SwitchToIK(this);
-	}
+		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
 
-    void SwitchDirection(bool dangleFromSender, Limb sender)
-    {
-        foreach (DistanceJoint2D j in distJoints)
-        {
-            if (j.connectedBody == sender.GetComponent<Rigidbody2D>())
-                j.enabled = dangleFromSender;
-            else
-            {
-                j.enabled = !dangleFromSender;
-                parent = j.connectedBody.GetComponent<Limb>();
-            }
-        }
-    }
+		_connectionToParent.enabled = true;
+		_connectionToChild.enabled = false;
+
+        base.SwitchToIK(this);
+	}
 }

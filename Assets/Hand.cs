@@ -2,52 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(DistanceJoint2D))]
-[RequireComponent(typeof(TargetJoint2D))]
+[RequireComponent(typeof(HingeJoint2D), typeof(HingeJoint2D))]
 public class Hand : MovableLimb
 {
-	[Tooltip("How long this hand will keep holding on to the handle, after the player has taken control over it.")]
-    public float delayBeforeLettingGo;
-	bool willSwitchToIK;	// Used to determine whether the hand still wants to switch over to IK. True while controlled, false when not controlled.
+	// The handle that this hand is currently over, null if not over any handle.
+	Rigidbody2D _currentHandle;
 
-    // Indicates whether the limb could currently hold on to a handle.
-    bool overHandle;
-	bool isControlled;
-	
-	DistanceJoint2D distJoint;
-    //TargetJoint2D targetJoint;
-    HingeJoint2D hinge;
+	[SerializeField]
+	MovableLimb _parentLimb;
 
-    Rigidbody2D currentHandle;
-
+	// Connections to other limbs.
+    HingeJoint2D _connectionToArm;
+    HingeJoint2D _connectionToHandhold;
+	   
+	// Indicates whether this hand is currently controlled.
+	bool _isControlled;
 
     override protected void Initialise()
 	{
 		base.Initialise();
-		distJoint = GetComponent<DistanceJoint2D>();
-        //targetJoint = GetComponent<TargetJoint2D>();
-        hinge = GetComponent<HingeJoint2D>();
-        parent = distJoint.connectedBody.GetComponent<Limb>();
+
+		// Assigning hinge joint variables.
+        HingeJoint2D[] joints = GetComponents<HingeJoint2D>();
+		_connectionToArm = joints[0];
+		_connectionToHandhold = joints[1];
+		_connectionToArm.connectedBody = _parentLimb.GetComponent<Rigidbody2D>();
+		_connectionToHandhold.connectedBody = null;
+		_connectionToArm.enabled = true;
+		_connectionToHandhold.enabled = false;
+
+		// Initialise parent limb with arm.
+        parent = _connectionToArm.connectedBody.GetComponent<MovableLimb>();
+
 	}
 
 
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.tag == "Handle")
+        if(other.tag == "Handle")
         {
-            overHandle = true;
-            currentHandle = collision.GetComponent<Rigidbody2D>();
-			if(!isControlled)
+            _currentHandle = other.GetComponent<Rigidbody2D>();
+			if(!_isControlled)
 				SwitchToIK(this);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.tag == "Handle")
+        if (other.tag == "Handle")
         {
-            currentHandle = null;
-            overHandle = false;
+            _currentHandle = null;
         }
     }
 
@@ -62,47 +66,41 @@ public class Hand : MovableLimb
     {
 		base.SetControlled(controlled);
 
-		willSwitchToIK = controlled;
-		isControlled = controlled;
-
-        if (controlled)
-        {
-            StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
-        }
+		_isControlled = controlled;
 		
-        else if (overHandle)
+        if (controlled)
+			SwitchToFK(this);		
+        else if (_currentHandle)
             SwitchToIK(this);
     }
 
-	IEnumerator SwitchToFKAfterTime(float time)
-	{
-		float startTime = Time.time;
-		while(Time.time < startTime + time)
-		{
-			if(!willSwitchToIK)
-				break;
-			yield return null;	
-		}
-		if(willSwitchToIK)
-			SwitchToFK(this);
-	}
 	
-    override public void SwitchToIK(Limb sender)
+    override protected void SwitchToIK(MovableLimb sender)
 	{
-		distJoint.enabled = false;
-        //targetJoint.enabled = true;
-        //targetJoint.target = transform.position;
-        hinge.enabled = true;
-        if (currentHandle)
-            hinge.connectedBody = currentHandle;
-		parent.SwitchToIK(this);
+		Debug.Log("SwitchToIK on "+name+", sender "+sender.name);
+
+		// Switch on the joint for connecting to handholds.
+		_connectionToHandhold.enabled = true;
+		// Assign the handhold as connected body.
+		_connectionToHandhold.connectedBody = _currentHandle;
+		// Switch off the joint connecting to the arm.
+		_connectionToArm.enabled = false;
+
+		base.SwitchToIK(this);
 	}
 
-    override public void SwitchToFK(Limb sender)
+    override protected void SwitchToFK(MovableLimb sender)
 	{	
-		distJoint.enabled = true;
-		//targetJoint.enabled = false;
-		hinge.enabled = false;
-		parent.SwitchToFK(this);
+		Debug.Log("SwitchToFK on "+name+", sender "+sender.name);
+
+		// Switch off the joint for connecting to handholds.
+		_connectionToHandhold.enabled = false;
+		// Assign null as connected body.
+		_connectionToHandhold.connectedBody = null;
+		// Switch on the joint connecting to the arm.
+		_connectionToArm.enabled = true;
+
+		base.SwitchToFK(this);
 	}
+
 }
