@@ -63,4 +63,10 @@ public class Body : MovableLimb
 		targetJoint.target = transform.position;
 		targetJoint.enabled = hold;
 	}
+
+	override public Body WhichBodyDoYouBelongTo()
+	{
+		return this;
+	}
+
 }

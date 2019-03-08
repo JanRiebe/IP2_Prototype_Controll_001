@@ -163,5 +163,11 @@ public abstract class MovableLimb: MonoBehaviour
 		parent.SwitchToFK(this);
 	}
 
-	
+	// Returns the body that this limb is connected to, even if there are other limbs in between.
+	virtual public Body WhichBodyDoYouBelongTo()
+	{
+		return parent.WhichBodyDoYouBelongTo();
+	}
+
+
 }

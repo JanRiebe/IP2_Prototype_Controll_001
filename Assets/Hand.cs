@@ -39,17 +39,20 @@ public class Hand : MovableLimb
 
 	private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Handle")
+        if(other.tag == "Handle" || 
+		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
         {
             _currentHandle = other.GetComponent<Rigidbody2D>();
 			if(!_isControlled)
-				SwitchToIK(this);
+				SwitchToIK(this);		
+				
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Handle")
+        if(other.tag == "Handle" || 
+		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
         {
             _currentHandle = null;
         }
