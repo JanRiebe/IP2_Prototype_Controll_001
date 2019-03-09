@@ -12,11 +12,6 @@
  * 
  */
 
- /*
-  * TODO: Allow to start a game with a specific number of players.
-  * 
-  * 
-  */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -28,11 +23,17 @@ public class GameManager : MonoBehaviour
     // Access the game manager through its instance.
     public static GameManager instance { get; private set; }
 
-    // Tracks how many bodies are currently alive.
-    private int bodiesAlive;
-
     public string menuSceneName;
     public string gameSceneName;
+
+	public delegate void RoundOverData(string winner, string looser, Dictionary<string, int> playerScores);
+	public static event RoundOverData OnRoundOver;
+
+	Dictionary<string, int> playerScores = new Dictionary<string, int>();
+	
+	public int numberOfRounds;
+
+	//TODO manage how the game manager keeps track of players and scores
 
     private void Awake()
     {
@@ -51,22 +52,55 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+		// Loading the game scene.
         SceneManager.LoadScene(gameSceneName);
-        bodiesAlive = 1;
+
+		// Resetting player scores.
+		playerScores = new Dictionary<string, int>();
+
+		// Registering to in game events.
+		MementoMori.OnDeath += PlayerDied;
+		MementoMori.OnVictory += PlayerWon;
     }
+
+
+	public void RoundOver(MementoMori winner)
+	{		
+		// Pausing the game.
+		Time.timeScale = 0;
+
+		playerScores[winner]++;
+
+		// Sending event telling, that the round is over and who won.
+		OnRoundOver(winner.name, playerScores);
+	}
 
 
     public void GameOver()
     {
+		// Unregistering from in game events.
+		MementoMori.OnDeath += PlayerDied;
+		MementoMori.OnVictory += PlayerWon;
+
         SceneManager.LoadScene(menuSceneName);
     }
 
 
-    public void BodyDied(MementoMori body)
+    public void PlayerDied(MementoMori player)
     {
-        bodiesAlive--;
-        if (bodiesAlive <= 0)
-            GameOver();
+        RoundOver(player);	//TODO needs to be the winner
     }
+
+	public void PlayerWon(MementoMori player)
+	{
+		RoundOver(player);
+	}
+
+
+	public void StartNextRound()
+	{
+		SceneManager.LoadScene(gameSceneName);
+	}
+
 }
 

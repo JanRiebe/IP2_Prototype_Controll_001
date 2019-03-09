@@ -10,15 +10,25 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class MementoMori : MonoBehaviour
 {
+
+	public delegate void TellThemWhoDidIt(MementoMori sender);
+	public static event TellThemWhoDidIt OnDeath;
+	public static event TellThemWhoDidIt OnVictory;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Killer")
         {
-            OnDeath();
+			Debug.Log(other.name);
+            OnDeath(this);
         }
+		else if(other.tag == "Finish")
+		{
+			OnVictory(this);
+		}
     }
 
-
+	/*
     private void OnDeath()
     {
         // Inform the game manager that this body has died.
@@ -28,4 +38,11 @@ public class MementoMori : MonoBehaviour
         //List<Limb> bodyParts = new List<Limb>();
         
     }
+
+	private void OnVictory()
+	{
+		// Inform the game manager that this body has won.
+		GameManager.instance.PlayerWon(this);
+	}
+	*/
 }
