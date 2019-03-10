@@ -6,13 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(TargetJoint2D))]
 public class Hand : MovableLimb
 {
-	[Tooltip("How long this hand will keep holding on to the handle, after the player has taken control over it.")]
-    public float delayBeforeLettingGo;
-	bool willSwitchToIK;	// Used to determine whether the hand still wants to switch over to IK. True while controlled, false when not controlled.
-
+    
     // Indicates whether the limb could currently hold on to a handle.
     bool overHandle;
-	bool isControlled;
 	
 	DistanceJoint2D distJoint;
 	TargetJoint2D targetJoint;
@@ -32,8 +28,6 @@ public class Hand : MovableLimb
         if(collision.tag == "Handle")
         {
             overHandle = true;
-			if(!isControlled)
-				SwitchToIK(this);
         }
     }
 
@@ -47,39 +41,26 @@ public class Hand : MovableLimb
 
 
 
-	/// <summary>
+    /// <summary>
     /// Call this to set this limb to be or not be controlled by the player.
     /// Causes the limb to switch between FK and IK.
     /// </summary>
     /// <param name="controlled">Whether the player controlls this limb.</param>
-    override public void SetControlled(bool controlled)
+    public virtual void SetControlled(bool controlled)
     {
-		base.SetControlled(controlled);
-
-		willSwitchToIK = controlled;
-		isControlled = controlled;
-
+		
         if (controlled)
         {
-            StartCoroutine(SwitchToFKAfterTime(delayBeforeLettingGo));
+            SwitchToFK(this);
         }
-		
-        else if (overHandle)
-            SwitchToIK(this);
+        else
+        {
+		if (overHandle)
+                SwitchToIK(this);
+        }
     }
 
-	IEnumerator SwitchToFKAfterTime(float time)
-	{
-		float startTime = Time.time;
-		while(Time.time < startTime + time)
-		{
-			if(!willSwitchToIK)
-				break;
-			yield return null;	
-		}
-		if(willSwitchToIK)
-			SwitchToFK(this);
-	}
+
 	
     override public void SwitchToIK(Limb sender)
 	{

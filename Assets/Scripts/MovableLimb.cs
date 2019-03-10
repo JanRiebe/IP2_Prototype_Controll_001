@@ -5,29 +5,29 @@ using UnityEngine;
 public abstract class MovableLimb : Limb
 {
 
-    InputManager inputManager;
-	
+
+
 
     [System.Serializable]
     public class ActivationAxis
     {
-        //[Tooltip("The name of the axis that switches this limb on.")]
+        [Tooltip("The name of the axis that switches this limb on.")]
         public string name;
         [Tooltip("How much this limb is afected by direction input after it has been activated by this axis.")]
         [Range(0, 1)]
         public float influence = 1.0f;
     }
-    
+
     public ActivationAxis[] activationInputs;
-	
-	
+
+
     public float strength;
 
-	protected Limb parent;
+    protected Limb parent;
 
 
 
-	
+
     [System.Serializable]
     public class Attack
     {
@@ -40,68 +40,54 @@ public abstract class MovableLimb : Limb
 
     [Tooltip("How forces act on the limb over time when the player makes an input.")]
     public Attack attack;
-	
 
-	float timeOfTakingControl;	// The time at which the limb last started to be controlled by the player.
+
+    float timeOfTakingControl;	// The time at which the limb last started to be controlled by the player.
 
 
     float forceFactor = 1;	// Determins if and how much a limb is currently controlled by directional input.
 
     protected Rigidbody2D rb;
-	
-	bool wasControlledInPreviousUpdate = false;		//TODO find more elegant solution
 
-    bool isControlledByPlayer;
+    bool wasControlledInPreviousUpdate = false;		//TODO find more elegant solution
 
     override protected void Initialise()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    //Public string to allow multiple player set up in inspector
-    //public string axis_Horizontal;
-    //public string axis_Vertical;
-
     // Update is called once per frame
     void Update()
     {
-
-
-
-
-        //Setting
-        //float axisMoveHorizontal = Input.GetAxis(axis_Horizontal);
-        //float axisMoveVertical = Input.GetAxis(axis_Vertical);
-
         // Calculating the force factor.
         forceFactor = 0.0f;
         bool isControlledByPlayer = false;
-        foreach(ActivationAxis axis in activationInputs)
+        foreach (ActivationAxis axis in activationInputs)
         {
             if (Input.GetAxis(axis.name) > 0.1f)
             {
                 forceFactor += axis.influence;
-                //isControlledByPlayer = true;
+                isControlledByPlayer = true;
             }
         }
         forceFactor = Mathf.Min(1.0f, forceFactor);
 
         // Setting this to forward or backward kinematic, depending on whether any of the controlling axes are active.
-		if(wasControlledInPreviousUpdate != isControlledByPlayer)
-		{
-			SetControlled(isControlledByPlayer);
-			wasControlledInPreviousUpdate = isControlledByPlayer;
-		}
-		
-		if(isControlledByPlayer)
-		{
-			GetComponent<SpriteRenderer>().color = Color.red;
-		}
-		else
-			GetComponent<SpriteRenderer>().color = Color.white;
+        if (wasControlledInPreviousUpdate != isControlledByPlayer)
+        {
+            SetControlled(isControlledByPlayer);
+            wasControlledInPreviousUpdate = isControlledByPlayer;
+        }
+
+        if (isControlledByPlayer)
+        {
+            GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        else
+            GetComponent<SpriteRenderer>().color = Color.white;
 
         //TODO move these in input control script, that calls force functions
-        //if (Input.GetAxis(inputManager.axis[0]) > 0.5)
+        if (Input.GetKey(KeyCode.UpArrow))
             ForceDirection(Vector2.up);
         if (Input.GetKey(KeyCode.DownArrow))
             ForceDirection(Vector2.down);
@@ -115,7 +101,6 @@ public abstract class MovableLimb : Limb
     if (Input.GetKey(KeyCode.E))
         ForceRotation(false);
         */
-
     }
 
 
@@ -123,15 +108,10 @@ public abstract class MovableLimb : Limb
 
 
     public virtual void SetControlled(bool controlled)
-	{
+    {
         if (controlled)
-        {
             timeOfTakingControl = Time.time;
-            isControlledByPlayer = true;
-        }
     }
-
-    InputManager inputmanager;
 
     /// <summary>
     /// Call this to apply a force in a global direction, independently of the limbs own orientation.
@@ -139,32 +119,13 @@ public abstract class MovableLimb : Limb
     /// <param name="direction">A Vector2 representing the direction to move in. 
     /// The magnitude of the vector does not affect the amount of foce.
     /// Should not be of magnitude 0.</param>
-    public void ForceDirection(Vector2 movement)
+    public void ForceDirection(Vector2 direction)
     {
-        rb.AddForce(movement.normalized * strength * forceFactor /* * AttackRightNow()*/);
-
-        //Debug.Log(movement);
+        rb.AddForce(direction.normalized * strength * forceFactor/* * AttackRightNow()*/);
     }
 
-    public void Axis(float horizontalAxis, float verticalAxis)
-    {
-        //float axisHorizontal = horizontalAxis;
-        //float axisVertical = verticalAxis;
 
-        if (horizontalAxis > 0.5)
-            ForceDirection(Vector2.right);
-        if (horizontalAxis < 0.5)
-            ForceDirection(Vector2.left);
-        if (verticalAxis > 0.5)
-            ForceDirection(Vector2.up);
-        if (verticalAxis < 0.5)
-            ForceDirection(Vector2.down);
-
-
-    }
-
-    
-	/*
+    /*
     public void ForceRotation(bool clockwise)
     {
         // Applies a directional force, depending on the vector to the limb it is dangling from,
@@ -184,33 +145,32 @@ public abstract class MovableLimb : Limb
          * x = x-axis
          * P = parent limb
          */
-         /*
-        // Setting the direction to apply force in depending on the roation.
-        Vector2 dir = Vector2.zero;
-        if (angle > 90)
-            dir = Vector2.right;
-        else if (angle > 0)
-            dir = Vector2.down;
-        else if (angle < -90)
-            dir = Vector2.up;
-        else //if (angle < 0)
-            dir = Vector2.left;
+    /*
+   // Setting the direction to apply force in depending on the roation.
+   Vector2 dir = Vector2.zero;
+   if (angle > 90)
+       dir = Vector2.right;
+   else if (angle > 0)
+       dir = Vector2.down;
+   else if (angle < -90)
+       dir = Vector2.up;
+   else //if (angle < 0)
+       dir = Vector2.left;
+   // Reversing the direction, if we want to rotate counter clockwise.
+   if (!clockwise)
+       dir = -dir;
 
-        // Reversing the direction, if we want to rotate counter clockwise.
-        if (!clockwise)
-            dir = -dir;
-            
-        ForceDirection(dir);
-        
+   ForceDirection(dir);
+
+}
+*/
+
+    float AttackRightNow()
+    {
+        float timePassed = Time.time - timeOfTakingControl;
+        float progress = Mathf.Min(1.0f, timePassed / attack.attackTime);
+        return attack.attackOverTime.Evaluate(progress);
     }
-	*/
 
-	float AttackRightNow()
-	{
-		float timePassed = Time.time - timeOfTakingControl;
-		float progress = Mathf.Min(1.0f, timePassed/attack.attackTime);
-		return attack.attackOverTime.Evaluate(progress);
-	}
 
-	
 }
