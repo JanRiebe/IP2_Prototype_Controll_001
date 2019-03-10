@@ -12,25 +12,27 @@
  * 
  */
 
+ /*
+  * TODO: Allow to start a game with a specific number of players.
+  * 
+  * 
+  */
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
     // Access the game manager through its instance.
     public static GameManager instance { get; private set; }
 
+    // Tracks how many bodies are currently alive.
+    private int bodiesAlive;
+
     public string menuSceneName;
     public string gameSceneName;
-    
-	
-	public int numberOfRounds;
-
-	
 
     private void Awake()
     {
@@ -46,24 +48,25 @@ public class GameManager : MonoBehaviour
     }
 
 
-    
 
     public void StartGame()
     {
-		// Loading the game scene.
         SceneManager.LoadScene(gameSceneName);
-    
+        bodiesAlive = 1;
     }
 
-    
 
     public void GameOver()
     {
-        // Loading the menu scene.
         SceneManager.LoadScene(menuSceneName);
     }
 
 
-    
+    public void BodyDied(MementoMori body)
+    {
+        bodiesAlive--;
+        if (bodiesAlive <= 0)
+            GameOver();
+    }
 }
 

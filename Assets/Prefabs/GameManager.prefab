@@ -40,9 +40,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6581618195717678712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c0df8c1b40758c43b7cc1f11b1f081e, type: 3}
+  m_Script: {fileID: 11500000, guid: 42d4a92aa624c8046b6bb0c897dcd1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: MenuScene
   gameSceneName: TestScene_Jan
-  numberOfRounds: 3
