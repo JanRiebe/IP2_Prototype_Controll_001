@@ -28,9 +28,11 @@ public abstract class MovableLimb: MonoBehaviour
 
 	protected MovableLimb parent;
 
+    protected Vector3 startPosition;
+    protected Quaternion startRotation;
 
 
-	
+
     [System.Serializable]
     public class Attack
     {
@@ -63,6 +65,10 @@ public abstract class MovableLimb: MonoBehaviour
 
     virtual protected void Initialise()
     {
+        // Saving the world space position and rotation at level start, to use them later in ResetToStartPosition.
+        startPosition = transform.position;
+        startRotation = transform.rotation;
+
         rb = GetComponent<Rigidbody2D>();
 		gruntOnDemand = GetComponent<GruntOnDemand>();
     }
@@ -169,5 +175,7 @@ public abstract class MovableLimb: MonoBehaviour
 		return parent.WhichBodyDoYouBelongTo();
 	}
 
+
+    abstract public void ResetToStartPosition();
 
 }
