@@ -17,6 +17,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,15 +26,11 @@ public class GameManager : MonoBehaviour
 
     public string menuSceneName;
     public string gameSceneName;
-
-	public delegate void RoundOverData(string winner, string looser, Dictionary<string, int> playerScores);
-	public static event RoundOverData OnRoundOver;
-
-	Dictionary<string, int> playerScores = new Dictionary<string, int>();
+    
 	
 	public int numberOfRounds;
 
-	//TODO manage how the game manager keeps track of players and scores
+	
 
     private void Awake()
     {
@@ -49,58 +46,24 @@ public class GameManager : MonoBehaviour
     }
 
 
+    
 
     public void StartGame()
     {
 		// Loading the game scene.
         SceneManager.LoadScene(gameSceneName);
-
-		// Resetting player scores.
-		playerScores = new Dictionary<string, int>();
-
-		// Registering to in game events.
-		MementoMori.OnDeath += PlayerDied;
-		MementoMori.OnVictory += PlayerWon;
+    
     }
 
-
-	public void RoundOver(MementoMori winner)
-	{		
-		// Pausing the game.
-		Time.timeScale = 0;
-
-		playerScores[winner]++;
-
-		// Sending event telling, that the round is over and who won.
-		OnRoundOver(winner.name, playerScores);
-	}
-
+    
 
     public void GameOver()
     {
-		// Unregistering from in game events.
-		MementoMori.OnDeath += PlayerDied;
-		MementoMori.OnVictory += PlayerWon;
-
+        // Loading the menu scene.
         SceneManager.LoadScene(menuSceneName);
     }
 
 
-    public void PlayerDied(MementoMori player)
-    {
-        RoundOver(player);	//TODO needs to be the winner
-    }
-
-	public void PlayerWon(MementoMori player)
-	{
-		RoundOver(player);
-	}
-
-
-	public void StartNextRound()
-	{
-		SceneManager.LoadScene(gameSceneName);
-	}
-
+    
 }
 
