@@ -102,4 +102,12 @@ public class Hand : MovableLimb
 		base.SwitchToFK(this);
 	}
 
+
+    public override void ResetToStartPosition()
+    {
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rb.velocity = Vector3.zero;
+    }
+
 }
