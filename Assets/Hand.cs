@@ -6,7 +6,7 @@ using UnityEngine;
 public class Hand : MovableLimb
 {
 	// The handle that this hand is currently over, null if not over any handle.
-	Rigidbody2D _currentHandle;
+	public Rigidbody2D _currentHandle;
 
 	[SerializeField]
 	MovableLimb _parentLimb;
@@ -15,9 +15,6 @@ public class Hand : MovableLimb
     HingeJoint2D _connectionToArm;
     HingeJoint2D _connectionToHandhold;
 	   
-	// Indicates whether this hand is currently controlled.
-	bool _isControlled;
-
     override protected void Initialise()
 	{
 		base.Initialise();
@@ -43,7 +40,7 @@ public class Hand : MovableLimb
 		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
         {
             _currentHandle = other.GetComponent<Rigidbody2D>();
-			if(!_isControlled)
+			if(!isControlled)
 				SwitchToIK(this);		
 				
         }
@@ -68,9 +65,7 @@ public class Hand : MovableLimb
     override public void SetControlled(bool controlled)
     {
 		base.SetControlled(controlled);
-
-		_isControlled = controlled;
-		
+        
         if (controlled)
 			SwitchToFK(this);		
         else if (_currentHandle)

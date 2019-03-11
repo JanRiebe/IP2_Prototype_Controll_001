@@ -17,7 +17,8 @@ public abstract class MovableLimb: MonoBehaviour
 
 	protected MovableLimb parent;
 
-    bool isControlled;
+    // Indicates whether this limb is currently controlled.
+    protected bool isControlled;
 
     [SerializeField]
     Color controlledCollor = Color.red;
@@ -67,7 +68,7 @@ public abstract class MovableLimb: MonoBehaviour
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        if(isControlled)
+        if (isControlled && IsSomeoneIK())
             rb.AddForce(direction.normalized * strength);
 
 		if(gruntOnDemand)
@@ -93,5 +94,8 @@ public abstract class MovableLimb: MonoBehaviour
 		return parent.WhichBodyDoYouBelongTo();
 	}
 
-
+    virtual protected bool IsSomeoneIK()
+    {
+        return parent.IsSomeoneIK();
+    }
 }
