@@ -42,18 +42,17 @@ public class InputManager : MonoBehaviour
     {
         foreach (PairInput pair in pairInput)
         {
-            bool controlled = Input.GetButton(pair.input);
-
+            
             if (Input.GetButtonDown(pair.input))
             {
-                playerControlingInput(controlled, pair.limb);
+                playerControlingInput(true, pair.limb);
                 
                 activeLimbs++;
             }
 
             if(Input.GetButtonUp(pair.input))
             {
-                playerControlingInput(controlled, pair.limb);
+                playerControlingInput(false, pair.limb);
 
                 activeLimbs--;
             }
