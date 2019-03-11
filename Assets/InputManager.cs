@@ -40,6 +40,14 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (activeLimbs == maxLimbs)
+        {
+            maxLimbsB = true;
+        }
+        else
+            maxLimbsB = false;
+
+
         foreach (PairInput pair in pairInput)
         {
             
@@ -72,19 +80,13 @@ public class InputManager : MonoBehaviour
             }
         }
 
-        if (activeLimbs == maxLimbs)
-        {
-            maxLimbsB = true;
-        }
-        else
-            maxLimbsB = false;
-
+        
 
     }
 
     public void playerControlingInput(bool controlled, MovableLimb limb)
     {
-        if (maxLimbsB == false)
+        if (activeLimbs < maxLimbs || !controlled)
         {
             limb.SetControlled(controlled);
         }   
