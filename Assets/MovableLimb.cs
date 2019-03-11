@@ -28,8 +28,7 @@ public abstract class MovableLimb: MonoBehaviour
 
 	GruntOnDemand gruntOnDemand;
 
-    Vector3 startPosition;
-    Quaternion startRotation;
+
 
 
 
