@@ -69,19 +69,4 @@ public class Body : MovableLimb
 		return this;
 	}
 
-    protected override bool IsSomeoneIK()
-    {
-        // Checking through all hinges, whether they are active.
-        foreach(HingeJoint2D h in hinges)
-        {
-            if (h.isActiveAndEnabled)
-            {
-                // If they are active, it means they are IK.
-                return true;
-            }
-        }
-        // If no joint is active, it means all limbs are FK, in which case we return false;
-        return false;
-    }
-
 }
