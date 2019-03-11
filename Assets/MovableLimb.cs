@@ -17,7 +17,7 @@ public abstract class MovableLimb: MonoBehaviour
 
 	protected MovableLimb parent;
 
-    bool isControlled;
+
 
     [SerializeField]
     Color controlledCollor = Color.red;
@@ -55,8 +55,6 @@ public abstract class MovableLimb: MonoBehaviour
             GetComponent<SpriteRenderer>().color = controlledCollor;
         else
             GetComponent<SpriteRenderer>().color = basicColor;
-
-        isControlled = controlled;
     }
 
     /// <summary>
@@ -67,8 +65,7 @@ public abstract class MovableLimb: MonoBehaviour
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        if(isControlled)
-            rb.AddForce(direction.normalized * strength);
+        rb.AddForce(direction.normalized * strength);
 
 		if(gruntOnDemand)
 			gruntOnDemand.PleaseGruntNow();

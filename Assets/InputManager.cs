@@ -36,6 +36,11 @@ public class InputManager : MonoBehaviour
     public int maxLimbs = 4;
     bool maxLimbsB;
 
+    // Use this for initialization
+    void Start()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -43,6 +48,8 @@ public class InputManager : MonoBehaviour
         foreach (PairInput pair in pairInput)
         {
             bool controlled = Input.GetButton(pair.input);
+
+            
 
             if (Input.GetButtonDown(pair.input))
             {
@@ -88,7 +95,8 @@ public class InputManager : MonoBehaviour
         if (maxLimbsB == false)
         {
             limb.SetControlled(controlled);
-        }   
+        }
+        //Debug.Log(activeLimbs);      
     }
 
     public void playercontrollingAxis(Vector2 movement, float horizontalAxis, float verticalAxis, MovableLimb limb)
