@@ -69,7 +69,7 @@ public class Body : MovableLimb
 		return this;
 	}
 
-    protected override bool IsSomeoneIK()
+    protected override bool IsAnyLimbHoldingOn()
     {
         // Checking through all hinges, whether they are active.
         foreach(HingeJoint2D h in hinges)
@@ -77,6 +77,8 @@ public class Body : MovableLimb
             if (h.isActiveAndEnabled)
             {
                 // If they are active, it means they are IK.
+                // So we need to check whether they are also controlled.
+                // If they are not controlled it means they are holding on.
                 return true;
             }
         }

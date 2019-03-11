@@ -68,7 +68,7 @@ public abstract class MovableLimb: MonoBehaviour
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        if (isControlled && IsSomeoneIK())
+        if (isControlled && IsAnyLimbHoldingOn())
             rb.AddForce(direction.normalized * strength);
 
 		if(gruntOnDemand)
@@ -94,8 +94,5 @@ public abstract class MovableLimb: MonoBehaviour
 		return parent.WhichBodyDoYouBelongTo();
 	}
 
-    virtual protected bool IsSomeoneIK()
-    {
-        return parent.IsSomeoneIK();
-    }
+    abstract protected bool IsAnyLimbHoldingOn();
 }

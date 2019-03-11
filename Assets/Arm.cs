@@ -41,4 +41,13 @@ public class Arm : MovableLimb
 
         base.SwitchToIK(this);
 	}
+
+
+    override protected bool IsAnyLimbHoldingOn()
+    {
+        //TODO
+        return parent.IsAnyLimbHoldingOn();
+    } 
+
+
 }
