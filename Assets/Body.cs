@@ -22,7 +22,7 @@ public class Body : MovableLimb
 				
 		// When the player stops controlling the body, it will hold its last position.
 		// When the body is set controlled it will stop holding its position.
-		HoldPosition(!controlled);
+		HoldPosition(!controlled && IsSomeoneIK());
     }
 
 
