@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 6192666}
   - component: {fileID: 6192665}
   - component: {fileID: 6192668}
+  - component: {fileID: 6192669}
   m_Layer: 0
   m_Name: handle1 (50)
   m_TagString: Handle
@@ -236,6 +237,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &6192669
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192664}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &13292790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -407,6 +429,7 @@ GameObject:
   - component: {fileID: 16190829}
   - component: {fileID: 16190828}
   - component: {fileID: 16190831}
+  - component: {fileID: 16190832}
   m_Layer: 0
   m_Name: handle1 (53)
   m_TagString: Handle
@@ -519,6 +542,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &16190832
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16190827}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &36801083
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +575,7 @@ GameObject:
   - component: {fileID: 36801085}
   - component: {fileID: 36801084}
   - component: {fileID: 36801087}
+  - component: {fileID: 36801088}
   m_Layer: 0
   m_Name: handle1 (79)
   m_TagString: Handle
@@ -643,6 +688,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &36801088
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36801083}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &43317071
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +720,7 @@ GameObject:
   - component: {fileID: 43317073}
   - component: {fileID: 43317072}
   - component: {fileID: 43317074}
+  - component: {fileID: 43317075}
   m_Layer: 0
   m_Name: window-1
   m_TagString: Handle
@@ -749,6 +816,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 5.15}
   m_EdgeRadius: 0
+--- !u!50 &43317075
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43317071}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &46451473
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +848,7 @@ GameObject:
   - component: {fileID: 46451475}
   - component: {fileID: 46451474}
   - component: {fileID: 46451476}
+  - component: {fileID: 46451477}
   m_Layer: 0
   m_Name: window-3
   m_TagString: Handle
@@ -855,6 +944,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.19, y: 7.33}
   m_EdgeRadius: 0
+--- !u!50 &46451477
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46451473}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &50830393
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +977,7 @@ GameObject:
   - component: {fileID: 50830395}
   - component: {fileID: 50830394}
   - component: {fileID: 50830397}
+  - component: {fileID: 50830398}
   m_Layer: 0
   m_Name: handle1 (36)
   m_TagString: Handle
@@ -979,6 +1090,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &50830398
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50830393}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &63521504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1160,7 @@ GameObject:
   - component: {fileID: 83989063}
   - component: {fileID: 83989062}
   - component: {fileID: 83989065}
+  - component: {fileID: 83989066}
   m_Layer: 0
   m_Name: handle1 (74)
   m_TagString: Handle
@@ -1140,6 +1273,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &83989066
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83989061}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &88110058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1305,7 @@ GameObject:
   - component: {fileID: 88110061}
   - component: {fileID: 88110060}
   - component: {fileID: 88110059}
+  - component: {fileID: 88110062}
   m_Layer: 0
   m_Name: lamp (1)
   m_TagString: Handle
@@ -1246,6 +1401,27 @@ Transform:
   m_Father: {fileID: 1139386536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &88110062
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88110058}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &102834603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1433,7 @@ GameObject:
   - component: {fileID: 102834606}
   - component: {fileID: 102834605}
   - component: {fileID: 102834604}
+  - component: {fileID: 102834607}
   m_Layer: 0
   m_Name: window-3 (1)
   m_TagString: Handle
@@ -1352,6 +1529,27 @@ Transform:
   m_Father: {fileID: 2028089140}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &102834607
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102834603}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &105412036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 425125434616654930, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -1370,6 +1568,7 @@ GameObject:
   - component: {fileID: 114557291}
   - component: {fileID: 114557290}
   - component: {fileID: 114557293}
+  - component: {fileID: 114557294}
   m_Layer: 0
   m_Name: handle1 (72)
   m_TagString: Handle
@@ -1482,6 +1681,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &114557294
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114557289}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &123347507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1714,7 @@ GameObject:
   - component: {fileID: 123347509}
   - component: {fileID: 123347508}
   - component: {fileID: 123347511}
+  - component: {fileID: 123347512}
   m_Layer: 0
   m_Name: handle1 (83)
   m_TagString: Handle
@@ -1606,6 +1827,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &123347512
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123347507}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &133611794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1982,7 @@ GameObject:
   - component: {fileID: 136978815}
   - component: {fileID: 136978814}
   - component: {fileID: 136978816}
+  - component: {fileID: 136978817}
   m_Layer: 0
   m_Name: pipe_long
   m_TagString: Handle
@@ -1835,6 +2078,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.73, y: 33}
   m_EdgeRadius: 0
+--- !u!50 &136978817
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136978813}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &165013807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,6 +2111,7 @@ GameObject:
   - component: {fileID: 165013809}
   - component: {fileID: 165013808}
   - component: {fileID: 165013811}
+  - component: {fileID: 165013812}
   m_Layer: 0
   m_Name: handle1 (63)
   m_TagString: Handle
@@ -1959,6 +2224,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &165013812
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165013807}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2326,7 @@ GameObject:
   - component: {fileID: 196325657}
   - component: {fileID: 196325656}
   - component: {fileID: 196325659}
+  - component: {fileID: 196325660}
   m_Layer: 0
   m_Name: handle_brick_2 (5)
   m_TagString: Handle
@@ -2152,6 +2439,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &196325660
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196325655}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &212411268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,6 +2472,7 @@ GameObject:
   - component: {fileID: 212411270}
   - component: {fileID: 212411269}
   - component: {fileID: 212411272}
+  - component: {fileID: 212411273}
   m_Layer: 0
   m_Name: handle1 (46)
   m_TagString: Handle
@@ -2276,6 +2585,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &212411273
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212411268}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &213675767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2618,7 @@ GameObject:
   - component: {fileID: 213675769}
   - component: {fileID: 213675768}
   - component: {fileID: 213675771}
+  - component: {fileID: 213675772}
   m_Layer: 0
   m_Name: handle1 (12)
   m_TagString: Handle
@@ -2400,6 +2731,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &213675772
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213675767}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &223107044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,6 +2764,7 @@ GameObject:
   - component: {fileID: 223107046}
   - component: {fileID: 223107045}
   - component: {fileID: 223107048}
+  - component: {fileID: 223107049}
   m_Layer: 0
   m_Name: handle1 (32)
   m_TagString: Handle
@@ -2524,6 +2877,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &223107049
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223107044}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &234990319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2910,7 @@ GameObject:
   - component: {fileID: 234990321}
   - component: {fileID: 234990320}
   - component: {fileID: 234990323}
+  - component: {fileID: 234990324}
   m_Layer: 0
   m_Name: handle1 (80)
   m_TagString: Handle
@@ -2648,6 +3023,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &234990324
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234990319}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &235272540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +3056,7 @@ GameObject:
   - component: {fileID: 235272542}
   - component: {fileID: 235272541}
   - component: {fileID: 235272544}
+  - component: {fileID: 235272545}
   m_Layer: 0
   m_Name: handle1 (18)
   m_TagString: Handle
@@ -2772,6 +3169,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &235272545
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235272540}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &239668553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,6 +3201,7 @@ GameObject:
   - component: {fileID: 239668555}
   - component: {fileID: 239668554}
   - component: {fileID: 239668556}
+  - component: {fileID: 239668557}
   m_Layer: 0
   m_Name: handle_brick_2 (2)
   m_TagString: Handle
@@ -2878,6 +3297,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.97, y: 7.6}
   m_EdgeRadius: 0
+--- !u!50 &239668557
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239668553}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &268805168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,6 +3330,7 @@ GameObject:
   - component: {fileID: 268805170}
   - component: {fileID: 268805169}
   - component: {fileID: 268805172}
+  - component: {fileID: 268805173}
   m_Layer: 0
   m_Name: handle1 (48)
   m_TagString: Handle
@@ -3002,6 +3443,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &268805173
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268805168}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &270595494
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,6 +3475,7 @@ GameObject:
   - component: {fileID: 270595496}
   - component: {fileID: 270595495}
   - component: {fileID: 270595497}
+  - component: {fileID: 270595498}
   m_Layer: 0
   m_Name: handle_brick_2 (1)
   m_TagString: Handle
@@ -3108,6 +3571,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.97, y: 7.6}
   m_EdgeRadius: 0
+--- !u!50 &270595498
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270595494}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &283270194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,6 +3727,7 @@ GameObject:
   - component: {fileID: 286483472}
   - component: {fileID: 286483471}
   - component: {fileID: 286483474}
+  - component: {fileID: 286483475}
   m_Layer: 0
   m_Name: handle1 (68)
   m_TagString: Handle
@@ -3355,6 +3840,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &286483475
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286483470}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &319339074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,7 +3961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319339074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13, y: 84.01, z: 0.16}
+  m_LocalPosition: {x: -0.64, y: 84.23, z: 0.16}
   m_LocalScale: {x: 0.79192317, y: 0.79192317, z: 0.79192317}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3472,6 +3978,7 @@ GameObject:
   - component: {fileID: 322413859}
   - component: {fileID: 322413858}
   - component: {fileID: 322413860}
+  - component: {fileID: 322413861}
   m_Layer: 0
   m_Name: handle_brick_2 (3)
   m_TagString: Handle
@@ -3567,6 +4074,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.97, y: 7.6}
   m_EdgeRadius: 0
+--- !u!50 &322413861
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322413857}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &375397911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,6 +4107,7 @@ GameObject:
   - component: {fileID: 375397913}
   - component: {fileID: 375397912}
   - component: {fileID: 375397915}
+  - component: {fileID: 375397916}
   m_Layer: 0
   m_Name: handle1 (17)
   m_TagString: Handle
@@ -3691,6 +4220,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &375397916
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375397911}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &381036661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3703,6 +4253,7 @@ GameObject:
   - component: {fileID: 381036663}
   - component: {fileID: 381036662}
   - component: {fileID: 381036665}
+  - component: {fileID: 381036666}
   m_Layer: 0
   m_Name: handle1 (75)
   m_TagString: Handle
@@ -3815,6 +4366,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &381036666
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381036661}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &386529530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,6 +4399,7 @@ GameObject:
   - component: {fileID: 386529532}
   - component: {fileID: 386529531}
   - component: {fileID: 386529534}
+  - component: {fileID: 386529535}
   m_Layer: 0
   m_Name: handle1 (47)
   m_TagString: Handle
@@ -3939,6 +4512,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &386529535
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386529530}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &388805620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,6 +4676,7 @@ GameObject:
   - component: {fileID: 414455091}
   - component: {fileID: 414455093}
   - component: {fileID: 414455092}
+  - component: {fileID: 414455094}
   m_Layer: 0
   m_Name: handle_brick_2 (9)
   m_TagString: Handle
@@ -4177,6 +4772,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &414455094
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414455090}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &427133842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4804,7 @@ GameObject:
   - component: {fileID: 427133844}
   - component: {fileID: 427133843}
   - component: {fileID: 427133845}
+  - component: {fileID: 427133846}
   m_Layer: 0
   m_Name: handle_brick_2 (4)
   m_TagString: Handle
@@ -4283,6 +4900,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.97, y: 7.6}
   m_EdgeRadius: 0
+--- !u!50 &427133846
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427133842}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &441213726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,6 +4933,7 @@ GameObject:
   - component: {fileID: 441213728}
   - component: {fileID: 441213727}
   - component: {fileID: 441213730}
+  - component: {fileID: 441213731}
   m_Layer: 0
   m_Name: handle1 (67)
   m_TagString: Handle
@@ -4407,6 +5046,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &441213731
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441213726}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &459302681
 GameObject:
   m_ObjectHideFlags: 0
@@ -4534,6 +5194,7 @@ GameObject:
   - component: {fileID: 462472509}
   - component: {fileID: 462472508}
   - component: {fileID: 462472511}
+  - component: {fileID: 462472512}
   m_Layer: 0
   m_Name: handle1 (13)
   m_TagString: Handle
@@ -4646,6 +5307,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &462472512
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462472507}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &471092241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,6 +5340,7 @@ GameObject:
   - component: {fileID: 471092243}
   - component: {fileID: 471092242}
   - component: {fileID: 471092245}
+  - component: {fileID: 471092246}
   m_Layer: 0
   m_Name: handle1 (35)
   m_TagString: Handle
@@ -4770,6 +5453,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &471092246
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471092241}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &471726536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4782,6 +5486,7 @@ GameObject:
   - component: {fileID: 471726538}
   - component: {fileID: 471726537}
   - component: {fileID: 471726540}
+  - component: {fileID: 471726541}
   m_Layer: 0
   m_Name: handle1 (42)
   m_TagString: Handle
@@ -4894,6 +5599,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &471726541
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471726536}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &484134241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,6 +5781,7 @@ GameObject:
   - component: {fileID: 505504247}
   - component: {fileID: 505504246}
   - component: {fileID: 505504249}
+  - component: {fileID: 505504250}
   m_Layer: 0
   m_Name: handle1 (49)
   m_TagString: Handle
@@ -5167,6 +5894,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &505504250
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505504245}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519541764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,6 +5927,7 @@ GameObject:
   - component: {fileID: 519541766}
   - component: {fileID: 519541765}
   - component: {fileID: 519541768}
+  - component: {fileID: 519541769}
   m_Layer: 0
   m_Name: handle1 (64)
   m_TagString: Handle
@@ -5291,6 +6040,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &519541769
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519541764}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +6140,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.67, y: 1.64, z: -6.78}
   m_LocalScale: {x: 1.7043, y: 1.7043, z: 1.7043}
-  m_Children: []
+  m_Children:
+  - {fileID: 1392124600}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5427,6 +6198,7 @@ GameObject:
   - component: {fileID: 547831947}
   - component: {fileID: 547831946}
   - component: {fileID: 547831949}
+  - component: {fileID: 547831950}
   m_Layer: 0
   m_Name: handle1 (7)
   m_TagString: Handle
@@ -5539,6 +6311,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &547831950
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547831945}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &564887273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,6 +6388,7 @@ GameObject:
   - component: {fileID: 565753688}
   - component: {fileID: 565753687}
   - component: {fileID: 565753690}
+  - component: {fileID: 565753691}
   m_Layer: 0
   m_Name: handle1 (40)
   m_TagString: Handle
@@ -5707,6 +6501,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &565753691
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565753686}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &570941777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5787,6 +6602,7 @@ GameObject:
   - component: {fileID: 582121551}
   - component: {fileID: 582121553}
   - component: {fileID: 582121552}
+  - component: {fileID: 582121554}
   m_Layer: 0
   m_Name: lamp (3)
   m_TagString: Handle
@@ -5882,6 +6698,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &582121554
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582121550}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &623117218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5894,6 +6731,7 @@ GameObject:
   - component: {fileID: 623117220}
   - component: {fileID: 623117219}
   - component: {fileID: 623117222}
+  - component: {fileID: 623117223}
   m_Layer: 0
   m_Name: handle1 (81)
   m_TagString: Handle
@@ -6006,6 +6844,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &623117223
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623117218}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &624108235
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,6 +6877,7 @@ GameObject:
   - component: {fileID: 624108237}
   - component: {fileID: 624108236}
   - component: {fileID: 624108239}
+  - component: {fileID: 624108240}
   m_Layer: 0
   m_Name: handle1 (60)
   m_TagString: Handle
@@ -6130,6 +6990,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &624108240
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624108235}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &626895215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,6 +7023,7 @@ GameObject:
   - component: {fileID: 626895217}
   - component: {fileID: 626895216}
   - component: {fileID: 626895219}
+  - component: {fileID: 626895220}
   m_Layer: 0
   m_Name: handle1 (8)
   m_TagString: Handle
@@ -6254,6 +7136,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &626895220
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626895215}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &641833133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6388,6 +7291,7 @@ GameObject:
   - component: {fileID: 642108875}
   - component: {fileID: 642108874}
   - component: {fileID: 642108873}
+  - component: {fileID: 642108876}
   m_Layer: 0
   m_Name: airconditioner (1)
   m_TagString: Handle
@@ -6483,6 +7387,27 @@ Transform:
   m_Father: {fileID: 699153349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &642108876
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642108872}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &648688524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,6 +7420,7 @@ GameObject:
   - component: {fileID: 648688526}
   - component: {fileID: 648688525}
   - component: {fileID: 648688528}
+  - component: {fileID: 648688529}
   m_Layer: 0
   m_Name: handle1 (23)
   m_TagString: Handle
@@ -6607,6 +7533,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &648688529
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648688524}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &663105783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6619,6 +7566,7 @@ GameObject:
   - component: {fileID: 663105785}
   - component: {fileID: 663105784}
   - component: {fileID: 663105787}
+  - component: {fileID: 663105788}
   m_Layer: 0
   m_Name: handle1 (2)
   m_TagString: Handle
@@ -6731,6 +7679,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &663105788
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663105783}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &672061725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6743,6 +7712,7 @@ GameObject:
   - component: {fileID: 672061727}
   - component: {fileID: 672061726}
   - component: {fileID: 672061729}
+  - component: {fileID: 672061730}
   m_Layer: 0
   m_Name: handle1 (41)
   m_TagString: Handle
@@ -6855,6 +7825,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &672061730
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672061725}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &674876681 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -6879,6 +7870,7 @@ GameObject:
   - component: {fileID: 675758704}
   - component: {fileID: 675758703}
   - component: {fileID: 675758706}
+  - component: {fileID: 675758707}
   m_Layer: 0
   m_Name: handle1 (25)
   m_TagString: Handle
@@ -6991,6 +7983,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &675758707
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675758702}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &683124858
 GameObject:
   m_ObjectHideFlags: 0
@@ -7003,6 +8016,7 @@ GameObject:
   - component: {fileID: 683124860}
   - component: {fileID: 683124859}
   - component: {fileID: 683124862}
+  - component: {fileID: 683124863}
   m_Layer: 0
   m_Name: handle1 (61)
   m_TagString: Handle
@@ -7115,6 +8129,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &683124863
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683124858}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &689649735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7127,6 +8162,7 @@ GameObject:
   - component: {fileID: 689649737}
   - component: {fileID: 689649736}
   - component: {fileID: 689649739}
+  - component: {fileID: 689649740}
   m_Layer: 0
   m_Name: handle1 (58)
   m_TagString: Handle
@@ -7239,6 +8275,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &689649740
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689649735}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &699153348
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,6 +8501,7 @@ GameObject:
   - component: {fileID: 803276078}
   - component: {fileID: 803276077}
   - component: {fileID: 803276080}
+  - component: {fileID: 803276081}
   m_Layer: 0
   m_Name: handle1 (1)
   m_TagString: Handle
@@ -7556,6 +8614,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &803276081
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803276076}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &809829931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7568,6 +8647,7 @@ GameObject:
   - component: {fileID: 809829933}
   - component: {fileID: 809829932}
   - component: {fileID: 809829935}
+  - component: {fileID: 809829936}
   m_Layer: 0
   m_Name: handle1 (57)
   m_TagString: Handle
@@ -7680,6 +8760,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &809829936
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809829931}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &847519559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7692,6 +8793,7 @@ GameObject:
   - component: {fileID: 847519561}
   - component: {fileID: 847519560}
   - component: {fileID: 847519563}
+  - component: {fileID: 847519564}
   m_Layer: 0
   m_Name: handle1 (71)
   m_TagString: Handle
@@ -7804,6 +8906,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &847519564
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847519559}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &868101811
 GameObject:
   m_ObjectHideFlags: 0
@@ -7816,6 +8939,7 @@ GameObject:
   - component: {fileID: 868101813}
   - component: {fileID: 868101812}
   - component: {fileID: 868101815}
+  - component: {fileID: 868101816}
   m_Layer: 0
   m_Name: handle1 (44)
   m_TagString: Handle
@@ -7928,6 +9052,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &868101816
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868101811}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &870145104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7940,6 +9085,7 @@ GameObject:
   - component: {fileID: 870145106}
   - component: {fileID: 870145105}
   - component: {fileID: 870145108}
+  - component: {fileID: 870145109}
   m_Layer: 0
   m_Name: handle1 (20)
   m_TagString: Handle
@@ -8052,6 +9198,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &870145109
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870145104}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &887354788
 GameObject:
   m_ObjectHideFlags: 0
@@ -8064,6 +9231,7 @@ GameObject:
   - component: {fileID: 887354790}
   - component: {fileID: 887354789}
   - component: {fileID: 887354792}
+  - component: {fileID: 887354793}
   m_Layer: 0
   m_Name: handle1 (51)
   m_TagString: Handle
@@ -8176,6 +9344,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &887354793
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887354788}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &901411645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,6 +9377,7 @@ GameObject:
   - component: {fileID: 901411647}
   - component: {fileID: 901411646}
   - component: {fileID: 901411649}
+  - component: {fileID: 901411650}
   m_Layer: 0
   m_Name: handle1 (82)
   m_TagString: Handle
@@ -8300,6 +9490,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &901411650
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901411645}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &904327249
 GameObject:
   m_ObjectHideFlags: 0
@@ -8311,6 +9522,7 @@ GameObject:
   - component: {fileID: 904327251}
   - component: {fileID: 904327250}
   - component: {fileID: 904327252}
+  - component: {fileID: 904327253}
   m_Layer: 0
   m_Name: airconditioner
   m_TagString: Handle
@@ -8406,6 +9618,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.63, y: 2.94}
   m_EdgeRadius: 0
+--- !u!50 &904327253
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904327249}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &914725077
 GameObject:
   m_ObjectHideFlags: 0
@@ -8417,6 +9650,7 @@ GameObject:
   - component: {fileID: 914725078}
   - component: {fileID: 914725080}
   - component: {fileID: 914725079}
+  - component: {fileID: 914725081}
   m_Layer: 0
   m_Name: lamp (2)
   m_TagString: Handle
@@ -8512,6 +9746,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &914725081
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914725077}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &920362685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,6 +9902,7 @@ GameObject:
   - component: {fileID: 1014567064}
   - component: {fileID: 1014567063}
   - component: {fileID: 1014567066}
+  - component: {fileID: 1014567067}
   m_Layer: 0
   m_Name: handle1 (14)
   m_TagString: Handle
@@ -8759,6 +10015,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1014567067
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014567062}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1050802905 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132291058995, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -8783,6 +10060,7 @@ GameObject:
   - component: {fileID: 1052525847}
   - component: {fileID: 1052525846}
   - component: {fileID: 1052525849}
+  - component: {fileID: 1052525850}
   m_Layer: 0
   m_Name: handle1 (39)
   m_TagString: Handle
@@ -8895,6 +10173,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1052525850
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052525845}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1056262119
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,6 +10206,7 @@ GameObject:
   - component: {fileID: 1056262121}
   - component: {fileID: 1056262120}
   - component: {fileID: 1056262123}
+  - component: {fileID: 1056262124}
   m_Layer: 0
   m_Name: handle1 (73)
   m_TagString: Handle
@@ -9019,6 +10319,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1056262124
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056262119}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1069713294
 GameObject:
   m_ObjectHideFlags: 0
@@ -9031,6 +10352,7 @@ GameObject:
   - component: {fileID: 1069713296}
   - component: {fileID: 1069713295}
   - component: {fileID: 1069713298}
+  - component: {fileID: 1069713299}
   m_Layer: 0
   m_Name: handle1 (3)
   m_TagString: Handle
@@ -9143,6 +10465,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1069713299
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069713294}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1080911584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5454626132117029852, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -9181,6 +10524,7 @@ GameObject:
   - component: {fileID: 1133342203}
   - component: {fileID: 1133342202}
   - component: {fileID: 1133342205}
+  - component: {fileID: 1133342206}
   m_Layer: 0
   m_Name: handle1 (62)
   m_TagString: Handle
@@ -9293,6 +10637,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1133342206
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133342201}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1139386535
 GameObject:
   m_ObjectHideFlags: 0
@@ -9339,6 +10704,7 @@ GameObject:
   - component: {fileID: 1145534762}
   - component: {fileID: 1145534761}
   - component: {fileID: 1145534763}
+  - component: {fileID: 1145534764}
   m_Layer: 0
   m_Name: handle_brick_2
   m_TagString: Handle
@@ -9434,6 +10800,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.97, y: 7.6}
   m_EdgeRadius: 0
+--- !u!50 &1145534764
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145534760}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1168924723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9569,6 +10956,7 @@ GameObject:
   - component: {fileID: 1169897962}
   - component: {fileID: 1169897961}
   - component: {fileID: 1169897964}
+  - component: {fileID: 1169897965}
   m_Layer: 0
   m_Name: handle1 (24)
   m_TagString: Handle
@@ -9681,6 +11069,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1169897965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169897960}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1174024919 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132372773882, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -9705,6 +11114,7 @@ GameObject:
   - component: {fileID: 1178739244}
   - component: {fileID: 1178739243}
   - component: {fileID: 1178739246}
+  - component: {fileID: 1178739247}
   m_Layer: 0
   m_Name: handle1 (56)
   m_TagString: Handle
@@ -9817,6 +11227,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1178739247
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178739242}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1180894722
 GameObject:
   m_ObjectHideFlags: 0
@@ -9829,6 +11260,7 @@ GameObject:
   - component: {fileID: 1180894724}
   - component: {fileID: 1180894723}
   - component: {fileID: 1180894726}
+  - component: {fileID: 1180894727}
   m_Layer: 0
   m_Name: handle1 (45)
   m_TagString: Handle
@@ -9941,6 +11373,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1180894727
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180894722}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1189957753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9953,6 +11406,7 @@ GameObject:
   - component: {fileID: 1189957755}
   - component: {fileID: 1189957754}
   - component: {fileID: 1189957757}
+  - component: {fileID: 1189957758}
   m_Layer: 0
   m_Name: handle1 (77)
   m_TagString: Handle
@@ -10065,6 +11519,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1189957758
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189957753}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1198947653
 GameObject:
   m_ObjectHideFlags: 0
@@ -10156,6 +11631,7 @@ GameObject:
   - component: {fileID: 1199921599}
   - component: {fileID: 1199921598}
   - component: {fileID: 1199921601}
+  - component: {fileID: 1199921602}
   m_Layer: 0
   m_Name: handle1 (55)
   m_TagString: Handle
@@ -10268,6 +11744,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1199921602
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199921597}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1201692217
 GameObject:
   m_ObjectHideFlags: 0
@@ -10279,6 +11776,7 @@ GameObject:
   - component: {fileID: 1201692219}
   - component: {fileID: 1201692218}
   - component: {fileID: 1201692220}
+  - component: {fileID: 1201692221}
   m_Layer: 0
   m_Name: lamp
   m_TagString: Handle
@@ -10374,6 +11872,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.92}
   m_EdgeRadius: 0
+--- !u!50 &1201692221
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201692217}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1217178786
 GameObject:
   m_ObjectHideFlags: 0
@@ -10386,6 +11905,7 @@ GameObject:
   - component: {fileID: 1217178788}
   - component: {fileID: 1217178787}
   - component: {fileID: 1217178790}
+  - component: {fileID: 1217178791}
   m_Layer: 0
   m_Name: handle1 (84)
   m_TagString: Handle
@@ -10498,6 +12018,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1217178791
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217178786}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1228131714
 GameObject:
   m_ObjectHideFlags: 0
@@ -10510,6 +12051,7 @@ GameObject:
   - component: {fileID: 1228131716}
   - component: {fileID: 1228131715}
   - component: {fileID: 1228131718}
+  - component: {fileID: 1228131719}
   m_Layer: 0
   m_Name: handle1 (78)
   m_TagString: Handle
@@ -10622,6 +12164,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1228131719
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228131714}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1273333511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11942,6 +13505,7 @@ GameObject:
   - component: {fileID: 1282820475}
   - component: {fileID: 1282820474}
   - component: {fileID: 1282820477}
+  - component: {fileID: 1282820478}
   m_Layer: 0
   m_Name: handle1 (27)
   m_TagString: Handle
@@ -12054,6 +13618,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1282820478
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282820473}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1283820107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5454626131504790907, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -12215,6 +13800,7 @@ GameObject:
   - component: {fileID: 1312189333}
   - component: {fileID: 1312189332}
   - component: {fileID: 1312189335}
+  - component: {fileID: 1312189336}
   m_Layer: 0
   m_Name: handle1 (22)
   m_TagString: Handle
@@ -12327,6 +13913,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1312189336
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312189331}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1315767889
 GameObject:
   m_ObjectHideFlags: 0
@@ -12339,6 +13946,7 @@ GameObject:
   - component: {fileID: 1315767891}
   - component: {fileID: 1315767890}
   - component: {fileID: 1315767893}
+  - component: {fileID: 1315767894}
   m_Layer: 0
   m_Name: handle1 (38)
   m_TagString: Handle
@@ -12451,6 +14059,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1315767894
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315767889}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1331048619
 GameObject:
   m_ObjectHideFlags: 0
@@ -12463,6 +14092,7 @@ GameObject:
   - component: {fileID: 1331048621}
   - component: {fileID: 1331048620}
   - component: {fileID: 1331048623}
+  - component: {fileID: 1331048624}
   m_Layer: 0
   m_Name: handle1 (19)
   m_TagString: Handle
@@ -12575,6 +14205,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1331048624
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331048619}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1354137624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5454626131236210091, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -12613,6 +14264,7 @@ GameObject:
   - component: {fileID: 1364058940}
   - component: {fileID: 1364058939}
   - component: {fileID: 1364058942}
+  - component: {fileID: 1364058943}
   m_Layer: 0
   m_Name: handle1 (28)
   m_TagString: Handle
@@ -12725,6 +14377,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1364058943
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364058938}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1370395987
 GameObject:
   m_ObjectHideFlags: 0
@@ -12860,6 +14533,7 @@ GameObject:
   - component: {fileID: 1387137585}
   - component: {fileID: 1387137584}
   - component: {fileID: 1387137587}
+  - component: {fileID: 1387137588}
   m_Layer: 0
   m_Name: handle1 (10)
   m_TagString: Handle
@@ -12972,6 +14646,84 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1387137588
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387137583}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!1 &1392124599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392124600}
+  - component: {fileID: 1392124601}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: Killer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1392124600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392124599}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.264038, y: -4.4299707, z: 3.8383608}
+  m_LocalScale: {x: 1.7015783, y: 1.7817285, z: 0.5867511}
+  m_Children: []
+  m_Father: {fileID: 534669905}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1392124601
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392124599}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.58, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1394344745
 GameObject:
   m_ObjectHideFlags: 0
@@ -12984,6 +14736,7 @@ GameObject:
   - component: {fileID: 1394344747}
   - component: {fileID: 1394344746}
   - component: {fileID: 1394344749}
+  - component: {fileID: 1394344750}
   m_Layer: 0
   m_Name: handle1 (59)
   m_TagString: Handle
@@ -13096,6 +14849,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1394344750
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394344745}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1398265182
 GameObject:
   m_ObjectHideFlags: 0
@@ -13310,6 +15084,7 @@ GameObject:
   - component: {fileID: 1455890112}
   - component: {fileID: 1455890111}
   - component: {fileID: 1455890114}
+  - component: {fileID: 1455890115}
   m_Layer: 0
   m_Name: handle1 (5)
   m_TagString: Handle
@@ -13422,6 +15197,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1455890115
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455890110}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1467646179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13557,6 +15353,7 @@ GameObject:
   - component: {fileID: 1471542386}
   - component: {fileID: 1471542385}
   - component: {fileID: 1471542388}
+  - component: {fileID: 1471542389}
   m_Layer: 0
   m_Name: handle1 (37)
   m_TagString: Handle
@@ -13669,6 +15466,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1471542389
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471542384}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1484117398
 GameObject:
   m_ObjectHideFlags: 0
@@ -13818,6 +15636,7 @@ GameObject:
   - component: {fileID: 1516560305}
   - component: {fileID: 1516560304}
   - component: {fileID: 1516560307}
+  - component: {fileID: 1516560308}
   m_Layer: 0
   m_Name: handle1 (29)
   m_TagString: Handle
@@ -13930,6 +15749,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1516560308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516560303}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1559167889
 GameObject:
   m_ObjectHideFlags: 0
@@ -13942,6 +15782,7 @@ GameObject:
   - component: {fileID: 1559167891}
   - component: {fileID: 1559167890}
   - component: {fileID: 1559167893}
+  - component: {fileID: 1559167894}
   m_Layer: 0
   m_Name: handle1 (43)
   m_TagString: Handle
@@ -14054,6 +15895,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1559167894
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559167889}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1574579534
 GameObject:
   m_ObjectHideFlags: 0
@@ -14066,6 +15928,7 @@ GameObject:
   - component: {fileID: 1574579536}
   - component: {fileID: 1574579535}
   - component: {fileID: 1574579538}
+  - component: {fileID: 1574579539}
   m_Layer: 0
   m_Name: handle1 (65)
   m_TagString: Handle
@@ -14178,6 +16041,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1574579539
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574579534}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1612453867
 GameObject:
   m_ObjectHideFlags: 0
@@ -14392,6 +16276,7 @@ GameObject:
   - component: {fileID: 1641890845}
   - component: {fileID: 1641890844}
   - component: {fileID: 1641890847}
+  - component: {fileID: 1641890848}
   m_Layer: 0
   m_Name: handle1 (69)
   m_TagString: Handle
@@ -14504,6 +16389,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1641890848
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641890843}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1645619825
 GameObject:
   m_ObjectHideFlags: 0
@@ -15020,6 +16926,7 @@ GameObject:
   - component: {fileID: 1697296940}
   - component: {fileID: 1697296939}
   - component: {fileID: 1697296942}
+  - component: {fileID: 1697296943}
   m_Layer: 0
   m_Name: handle1
   m_TagString: Handle
@@ -15132,6 +17039,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1697296943
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697296938}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1703492914
 GameObject:
   m_ObjectHideFlags: 0
@@ -15144,6 +17072,7 @@ GameObject:
   - component: {fileID: 1703492916}
   - component: {fileID: 1703492915}
   - component: {fileID: 1703492918}
+  - component: {fileID: 1703492919}
   m_Layer: 0
   m_Name: handle1 (66)
   m_TagString: Handle
@@ -15256,6 +17185,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1703492919
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703492914}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1722427167
 GameObject:
   m_ObjectHideFlags: 0
@@ -15268,6 +17218,7 @@ GameObject:
   - component: {fileID: 1722427169}
   - component: {fileID: 1722427168}
   - component: {fileID: 1722427171}
+  - component: {fileID: 1722427172}
   m_Layer: 0
   m_Name: handle1 (31)
   m_TagString: Handle
@@ -15380,6 +17331,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1722427172
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722427167}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1748790246
 GameObject:
   m_ObjectHideFlags: 0
@@ -15392,6 +17364,7 @@ GameObject:
   - component: {fileID: 1748790248}
   - component: {fileID: 1748790247}
   - component: {fileID: 1748790250}
+  - component: {fileID: 1748790251}
   m_Layer: 0
   m_Name: handle1 (4)
   m_TagString: Handle
@@ -15504,6 +17477,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1748790251
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748790246}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1769759758
 GameObject:
   m_ObjectHideFlags: 0
@@ -15516,6 +17510,7 @@ GameObject:
   - component: {fileID: 1769759760}
   - component: {fileID: 1769759759}
   - component: {fileID: 1769759762}
+  - component: {fileID: 1769759763}
   m_Layer: 0
   m_Name: handle1 (76)
   m_TagString: Handle
@@ -15628,6 +17623,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1769759763
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769759758}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1778831894
 GameObject:
   m_ObjectHideFlags: 0
@@ -15640,6 +17656,7 @@ GameObject:
   - component: {fileID: 1778831896}
   - component: {fileID: 1778831895}
   - component: {fileID: 1778831898}
+  - component: {fileID: 1778831899}
   m_Layer: 0
   m_Name: handle1 (70)
   m_TagString: Handle
@@ -15752,6 +17769,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1778831899
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778831894}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1779893397 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132359648714, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -15776,6 +17814,7 @@ GameObject:
   - component: {fileID: 1784860363}
   - component: {fileID: 1784860362}
   - component: {fileID: 1784860365}
+  - component: {fileID: 1784860366}
   m_Layer: 0
   m_Name: handle1 (9)
   m_TagString: Handle
@@ -15888,6 +17927,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1784860366
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784860361}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1798024934
 GameObject:
   m_ObjectHideFlags: 0
@@ -15900,6 +17960,7 @@ GameObject:
   - component: {fileID: 1798024936}
   - component: {fileID: 1798024935}
   - component: {fileID: 1798024938}
+  - component: {fileID: 1798024939}
   m_Layer: 0
   m_Name: handle1 (15)
   m_TagString: Handle
@@ -16012,6 +18073,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1798024939
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798024934}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1804598884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6581618195717678712, guid: c9956f1c07adcdc4eb5621c50058b956,
@@ -16043,6 +18125,7 @@ GameObject:
   - component: {fileID: 1812486782}
   - component: {fileID: 1812486786}
   - component: {fileID: 1812486785}
+  - component: {fileID: 1812486787}
   m_Layer: 0
   m_Name: handle1 (11)
   m_TagString: Handle
@@ -16172,6 +18255,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1812486787
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812486781}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1851364741
 GameObject:
   m_ObjectHideFlags: 0
@@ -16184,6 +18288,7 @@ GameObject:
   - component: {fileID: 1851364743}
   - component: {fileID: 1851364742}
   - component: {fileID: 1851364745}
+  - component: {fileID: 1851364746}
   m_Layer: 0
   m_Name: handle1 (6)
   m_TagString: Handle
@@ -16296,6 +18401,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1851364746
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851364741}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1867991422
 GameObject:
   m_ObjectHideFlags: 0
@@ -16308,6 +18434,7 @@ GameObject:
   - component: {fileID: 1867991424}
   - component: {fileID: 1867991423}
   - component: {fileID: 1867991426}
+  - component: {fileID: 1867991427}
   m_Layer: 0
   m_Name: handle1 (21)
   m_TagString: Handle
@@ -16420,6 +18547,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1867991427
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867991422}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1878964262
 GameObject:
   m_ObjectHideFlags: 0
@@ -16431,6 +18579,7 @@ GameObject:
   - component: {fileID: 1878964264}
   - component: {fileID: 1878964263}
   - component: {fileID: 1878964265}
+  - component: {fileID: 1878964266}
   m_Layer: 0
   m_Name: window-4
   m_TagString: Handle
@@ -16526,6 +18675,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.1, y: 6.61}
   m_EdgeRadius: 0
+--- !u!50 &1878964266
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878964262}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1928286927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5454626132713187348, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -16564,6 +18734,7 @@ GameObject:
   - component: {fileID: 1949225418}
   - component: {fileID: 1949225417}
   - component: {fileID: 1949225420}
+  - component: {fileID: 1949225421}
   m_Layer: 0
   m_Name: handle1 (34)
   m_TagString: Handle
@@ -16676,6 +18847,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1949225421
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949225416}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1955674481
 GameObject:
   m_ObjectHideFlags: 0
@@ -16725,6 +18917,7 @@ GameObject:
   - component: {fileID: 1964941104}
   - component: {fileID: 1964941103}
   - component: {fileID: 1964941106}
+  - component: {fileID: 1964941107}
   m_Layer: 0
   m_Name: handle1 (30)
   m_TagString: Handle
@@ -16837,6 +19030,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1964941107
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964941102}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1981885962
 GameObject:
   m_ObjectHideFlags: 0
@@ -16849,6 +19063,7 @@ GameObject:
   - component: {fileID: 1981885964}
   - component: {fileID: 1981885963}
   - component: {fileID: 1981885966}
+  - component: {fileID: 1981885967}
   m_Layer: 0
   m_Name: handle1 (52)
   m_TagString: Handle
@@ -16961,6 +19176,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &1981885967
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981885962}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &2017903840 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132291058995, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -16985,6 +19221,7 @@ GameObject:
   - component: {fileID: 2023969789}
   - component: {fileID: 2023969788}
   - component: {fileID: 2023969791}
+  - component: {fileID: 2023969792}
   m_Layer: 0
   m_Name: handle1 (16)
   m_TagString: Handle
@@ -17097,6 +19334,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &2023969792
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023969787}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2028089139
 GameObject:
   m_ObjectHideFlags: 0
@@ -17143,6 +19401,7 @@ GameObject:
   - component: {fileID: 2037288599}
   - component: {fileID: 2037288598}
   - component: {fileID: 2037288601}
+  - component: {fileID: 2037288602}
   m_Layer: 0
   m_Name: handle1 (54)
   m_TagString: Handle
@@ -17255,6 +19514,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &2037288602
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037288597}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2040611778
 GameObject:
   m_ObjectHideFlags: 0
@@ -17345,6 +19625,7 @@ GameObject:
   - component: {fileID: 2077683482}
   - component: {fileID: 2077683484}
   - component: {fileID: 2077683483}
+  - component: {fileID: 2077683485}
   m_Layer: 0
   m_Name: lamp (4)
   m_TagString: Handle
@@ -17440,6 +19721,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2077683485
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077683481}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &2098918999 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
@@ -17464,6 +19766,7 @@ GameObject:
   - component: {fileID: 2109151996}
   - component: {fileID: 2109151995}
   - component: {fileID: 2109151998}
+  - component: {fileID: 2109151999}
   m_Layer: 0
   m_Name: handle1 (26)
   m_TagString: Handle
@@ -17576,6 +19879,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &2109151999
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109151994}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2143251422
 GameObject:
   m_ObjectHideFlags: 0
@@ -17588,6 +19912,7 @@ GameObject:
   - component: {fileID: 2143251424}
   - component: {fileID: 2143251423}
   - component: {fileID: 2143251426}
+  - component: {fileID: 2143251427}
   m_Layer: 0
   m_Name: handle1 (33)
   m_TagString: Handle
@@ -17700,6 +20025,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d7c51c25fcb49f488a331c6deb947ad, type: 3}
   - {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
   - {fileID: 21300000, guid: 29796ce12cd31994d8e682ab62f0ebe2, type: 3}
+--- !u!50 &2143251427
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143251422}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5454626132093000836 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 425125434616654930, guid: 44aafee3105c6af44924ae8671e10f15,
