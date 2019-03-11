@@ -68,7 +68,7 @@ public class Body : MovableLimb
 	{
 		return this;
 	}
-
+    /*
     protected override bool IsAnyLimbHoldingOn()
     {
         // Checking through all hinges, whether they are active.
@@ -85,5 +85,5 @@ public class Body : MovableLimb
         // If no joint is active, it means all limbs are FK, in which case we return false;
         return false;
     }
-
+    */
 }
