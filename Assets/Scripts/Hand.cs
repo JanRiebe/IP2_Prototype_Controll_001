@@ -6,7 +6,7 @@ using UnityEngine;
 public class Hand : MovableLimb
 {
 	// The handle that this hand is currently over, null if not over any handle.
-	public Rigidbody2D _currentHandle;
+	Rigidbody2D _currentHandle;
 
 	[SerializeField]
 	MovableLimb _parentLimb;
@@ -14,7 +14,10 @@ public class Hand : MovableLimb
 	// Connections to other limbs.
     HingeJoint2D _connectionToArm;
     HingeJoint2D _connectionToHandhold;
-	   
+
+	// Indicates whether this hand is currently controlled.
+	bool _isControlled;
+
     override protected void Initialise()
 	{
 		base.Initialise();
@@ -36,19 +39,19 @@ public class Hand : MovableLimb
 
 	private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Handle" || 
+        if(other.tag == "Handle" ||
 		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
         {
             _currentHandle = other.GetComponent<Rigidbody2D>();
-			if(!isControlled)
-				SwitchToIK(this);		
-				
+			if(!_isControlled)
+				SwitchToIK(this);
+
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Handle" || 
+        if(other.tag == "Handle" ||
 		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
         {
             _currentHandle = null;
@@ -65,14 +68,16 @@ public class Hand : MovableLimb
     override public void SetControlled(bool controlled)
     {
 		base.SetControlled(controlled);
-        
+
+		_isControlled = controlled;
+
         if (controlled)
-			SwitchToFK(this);		
+			SwitchToFK(this);
         else if (_currentHandle)
             SwitchToIK(this);
     }
 
-	
+
     override protected void SwitchToIK(MovableLimb sender)
 	{
 		// Switch on the joint for connecting to handholds.
@@ -86,7 +91,7 @@ public class Hand : MovableLimb
 	}
 
     override protected void SwitchToFK(MovableLimb sender)
-	{	
+	{
 		// Switch off the joint for connecting to handholds.
 		_connectionToHandhold.enabled = false;
 		// Assign null as connected body.
@@ -97,5 +102,12 @@ public class Hand : MovableLimb
 		base.SwitchToFK(this);
 	}
 
+
+    public override void ResetToStartPosition()
+    {
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rb.velocity = Vector3.zero;
+    }
 
 }

@@ -41,13 +41,12 @@ public class Arm : MovableLimb
 
         base.SwitchToIK(this);
 	}
-    /*
 
-    override protected bool IsAnyLimbHoldingOn()
+    public override void ResetToStartPosition()
     {
-        //TODO
-        return parent.IsAnyLimbHoldingOn();
-    } 
-    */
-
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rb.velocity = Vector3.zero;
+        _childLimb.ResetToStartPosition();
+    }
 }

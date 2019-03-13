@@ -7,7 +7,7 @@ public class Body : MovableLimb
 
 	HingeJoint2D[] hinges;
 	TargetJoint2D targetJoint;
-    
+
 	override protected void Initialise()
 	{
 		base.Initialise();
@@ -19,16 +19,16 @@ public class Body : MovableLimb
 	override public void SetControlled(bool controlled)
     {
 		base.SetControlled(controlled);
-				
+
 		// When the player stops controlling the body, it will hold its last position.
 		// When the body is set controlled it will stop holding its position.
-		HoldPosition(!controlled && IsSomeoneIK());
+		HoldPosition(!controlled);
     }
 
 
     override protected void SwitchToIK(MovableLimb sender)
 	{
-		
+
 		HingeJoint2D connected = FindJointConnectedToSender(sender);
 		if(connected != null)
 			connected.enabled = true;
@@ -68,22 +68,16 @@ public class Body : MovableLimb
 	{
 		return this;
 	}
-    /*
-    protected override bool IsAnyLimbHoldingOn()
+
+
+    public override void ResetToStartPosition()
     {
-        // Checking through all hinges, whether they are active.
-        foreach(HingeJoint2D h in hinges)
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rb.velocity = Vector3.zero;
+        foreach (HingeJoint2D j in hinges)
         {
-            if (h.isActiveAndEnabled)
-            {
-                // If they are active, it means they are IK.
-                // So we need to check whether they are also controlled.
-                // If they are not controlled it means they are holding on.
-                return true;
-            }
+            j.connectedBody.GetComponent<MovableLimb>().ResetToStartPosition();
         }
-        // If no joint is active, it means all limbs are FK, in which case we return false;
-        return false;
     }
-    */
 }
