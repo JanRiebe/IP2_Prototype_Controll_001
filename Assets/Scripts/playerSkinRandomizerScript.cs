@@ -10,24 +10,24 @@ public class playerSkinRandomizerScript : MonoBehaviour
     void Start()
     {
         playerone = Random.Range(1, 6);
-        Debug.Log(playerone);
+        //Debug.Log(playerone);
         playertwo = Random.Range(1, 6);
-        Debug.Log(playertwo);
+        //Debug.Log(playertwo);
         //I Know how messy this is, but it's just a really rough draft for it.
         if(playertwo == playerone)
         {
             playertwo = Random.Range(1, 6);
-            Debug.Log(playertwo);
+            //Debug.Log(playertwo);
         }
         if (playertwo == playerone)
         {
             playertwo = Random.Range(1, 6);
-            Debug.Log(playertwo);
+            //Debug.Log(playertwo);
         }
         if (playertwo == playerone)
         {
             playertwo = Random.Range(1, 6);
-            Debug.Log(playertwo);
+            //Debug.Log(playertwo);
         }
 
     }

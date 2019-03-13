@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Scripts
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,8 @@ public class UIInGame : MonoBehaviour
     public class PlayerStats
     {
         public string playerName;
-        public Image[] stars;
+        public Image playerHead;
+        public Transform starPanel;
     }
 
     [Tooltip("First number is the fade in duration. Second number is how long it stays faded in. Third number is the fade out duration.")]
@@ -40,6 +42,15 @@ public class UIInGame : MonoBehaviour
     }
 
 
+    private void Start()
+    {
+        // Fadign out the player heads at the beggining of the level.
+        foreach (PlayerStats p in playerStats)
+        {
+            StartCoroutine(FadeImage(p.playerHead));
+        }
+    }
+
     void UpdatePlayerStars(PlayerInGame player, int score)
     {
         if (score >= 3)
@@ -53,18 +64,30 @@ public class UIInGame : MonoBehaviour
 
         // Updating stars
         // Finding the stars of the relevant player.
-        Image[] stars = playerStats.Find(x => x.playerName == player.playerName).stars;
+        PlayerStats pStats = playerStats.Find(x => x.playerName == player.playerName);
+        Transform starPanel = pStats.starPanel;
 
-        for (int i = 0; i < stars.Length; i++)
+        Image star;
+        Color invisible = new Color(0, 0, 0, 0);
+
+        for (int i = 0; i < starPanel.childCount; i++)
         {
+            // Getting the star image.
+            star = starPanel.GetChild(i).GetComponent<Image>();
             if (i < score)
             {
-                // Activating the star
-                stars[i].gameObject.SetActive(true);
-                // Fading in the stars for a time.
-                StartCoroutine(FadeImage(stars[i]));
+                // Activating the star by making the image visible.
+                star.color = Color.white;
+                // Fading the star.
+                StartCoroutine(FadeImage(star));
             }
+            else
+                // Deactivating the star by making the image invisible.
+                star.color = invisible;
         }
+        
+        // Fading the player head.
+        StartCoroutine(FadeImage(pStats.playerHead));
     }
     
 	
@@ -80,8 +103,9 @@ public class UIInGame : MonoBehaviour
 
 
 
-    IEnumerator FadeImage(Image fadeThis)
+    IEnumerator FadeImage(Graphic fadeThis)
     {
+        Debug.Log("Fade start");
         // Fade in
         fadeThis.CrossFadeAlpha(starAlphas.y, starFadeTimes.x, false);
         yield return new WaitForSeconds(starFadeTimes.x);
@@ -90,5 +114,6 @@ public class UIInGame : MonoBehaviour
         // Fade out
         fadeThis.CrossFadeAlpha(starAlphas.x, starFadeTimes.z, false);
         yield return new WaitForSeconds(starFadeTimes.z);
+        Debug.Log("Fade end");
     }
 }

@@ -21,7 +21,6 @@ public class PlayerInGame : MonoBehaviour
     public delegate void TellScore(PlayerInGame player, int score);
     public static event TellScore OnScoreUpdated;
 
-    Vector2 startPosition;
 
     
     void OnEnable()
@@ -37,19 +36,13 @@ public class PlayerInGame : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-        // Storing the start position so we can be moved there when the level ends.
-        startPosition = transform.position;
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Killer")
         {
             // Tell other players I died.
             OnDeath(this);
-
+            Debug.Log(name + " died");
             OnRoundOver();
         }
 		else if(other.tag == "Finish")
