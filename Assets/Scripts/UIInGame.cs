@@ -105,7 +105,6 @@ public class UIInGame : MonoBehaviour
 
     IEnumerator FadeImage(Graphic fadeThis)
     {
-        Debug.Log("Fade start");
         // Fade in
         fadeThis.CrossFadeAlpha(starAlphas.y, starFadeTimes.x, false);
         yield return new WaitForSeconds(starFadeTimes.x);
@@ -114,6 +113,5 @@ public class UIInGame : MonoBehaviour
         // Fade out
         fadeThis.CrossFadeAlpha(starAlphas.x, starFadeTimes.z, false);
         yield return new WaitForSeconds(starFadeTimes.z);
-        Debug.Log("Fade end");
     }
 }

@@ -21,6 +21,9 @@ public class PlayerInGame : MonoBehaviour
     public delegate void TellScore(PlayerInGame player, int score);
     public static event TellScore OnScoreUpdated;
 
+    public delegate void EmptyDelegate();
+    public static event EmptyDelegate OnRoundOver;
+
 
     
     void OnEnable()
@@ -62,6 +65,11 @@ public class PlayerInGame : MonoBehaviour
         {
             IncreaseScore();
             OnRoundOver();
+
+            // Moving the body back to start position for the next round.
+            if (score < GameManager.instance.numberOfRounds)
+                GetComponent<Body>().ResetToStartPosition();
+            // If the game is over, there is no need to move back to the start.
         }
     }
 
@@ -70,17 +78,11 @@ public class PlayerInGame : MonoBehaviour
     {
         score++;
         // Tell the world I have a new score.
-        OnScoreUpdated(this, score);
+        if(OnScoreUpdated != null)
+            OnScoreUpdated(this, score);
     }
 
-
-    void OnRoundOver()
-    {
-        // Moving the body back to start position for the next round.
-        if (score < GameManager.instance.numberOfRounds)
-            GetComponent<Body>().ResetToStartPosition();
-        // If the game is over, there is no need to move back to the start.
-    }
+    
     
 
     
