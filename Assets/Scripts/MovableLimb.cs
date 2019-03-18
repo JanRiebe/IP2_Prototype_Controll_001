@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Assets
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,16 +7,31 @@ public abstract class MovableLimb: MonoBehaviour
 {
 
 	
-	void Start()
-	{
-		Initialise();
-	}
 
 
-	[SerializeField]
+
+
+    [System.Serializable]
+    public class Attack
+    {
+        [Tooltip("The time in seconds it takes the limb to reach its final force strength.")]
+        public float attackTime = 1;
+
+        [Tooltip("The amount of force that will be applied over the duration of attackTime.")]
+        public AnimationCurve attackOverTime;
+    }
+
+    [Tooltip("How forces act on the limb over time when the player makes an input.")]
+    public Attack attack;
+
+    
+    [SerializeField]
     float strength;
 
-	protected MovableLimb parent;
+    float timeOfTakingControl;
+
+
+    protected MovableLimb parent;
 
     // Indicates whether this limb is currently controlled.
     protected bool isControlled;
@@ -29,8 +45,14 @@ public abstract class MovableLimb: MonoBehaviour
 
 	GruntOnDemand gruntOnDemand;
 
-    Vector3 startPosition;
-    Quaternion startRotation;
+    protected Vector3 startPosition;
+    protected Quaternion startRotation;
+
+
+    void Start()
+    {
+        Initialise();
+    }
 
 
 
@@ -53,7 +75,10 @@ public abstract class MovableLimb: MonoBehaviour
     public virtual void SetControlled(bool controlled)
 	{
         if (controlled)
+        {
+            timeOfTakingControl = Time.time;
             GetComponent<SpriteRenderer>().color = controlledCollor;
+        }
         else
             GetComponent<SpriteRenderer>().color = basicColor;
 
@@ -68,7 +93,7 @@ public abstract class MovableLimb: MonoBehaviour
     /// Should not be of magnitude 0.</param>
     public void ForceDirection(Vector2 direction)
     {
-        if (isControlled && IsSomeoneIK())
+        if (isControlled)// && IsAnyLimbHoldingOn())
             rb.AddForce(direction.normalized * strength);
 
 		if(gruntOnDemand)
@@ -94,8 +119,16 @@ public abstract class MovableLimb: MonoBehaviour
 		return parent.WhichBodyDoYouBelongTo();
 	}
 
-    virtual protected bool IsSomeoneIK()
+    float AttackRightNow()
     {
-        return parent.IsSomeoneIK();
+        float timePassed = Time.time - timeOfTakingControl;
+        float progress = Mathf.Min(1.0f, timePassed / attack.attackTime);
+        return attack.attackOverTime.Evaluate(progress);
     }
+
+
+
+    abstract public void ResetToStartPosition();
+
+    //abstract protected bool IsAnyLimbHoldingOn();
 }
