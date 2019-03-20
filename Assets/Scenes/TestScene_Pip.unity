@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17684,12 +17684,12 @@ PrefabInstance:
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.21
+      value: 7.26
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.77
+      value: 12.06
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
@@ -20640,7 +20640,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -28722,30 +28722,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_BasicRagdoll 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: strength
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454626132372773882, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: strength
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454626132291058995, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: strength
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.53
+      value: -7.22
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76
+      value: 17.64
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132426002488, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
@@ -29112,6 +29097,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 425125434616654888, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: playerName
+      value: Player_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: strength
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132372773882, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: strength
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132291058995, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: strength
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5454626132359648714, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: strength
@@ -29126,11 +29131,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 425125434616654888, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: playerName
-      value: Player_A
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}
