@@ -30,7 +30,6 @@ public class playerSpriteManager : MonoBehaviour
 
         Character character = player.character;
 
-
         head.sprite = character.head;
         torso.sprite = character.torso;
         forearm_r.sprite = character.forearm;

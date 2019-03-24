@@ -5769,39 +5769,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &407875505 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626131473716375, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &407875507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407875505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &427133842
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,39 +7070,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 59fbab23b394a1e4d8f4c7805e977fd6, type: 3}
   - {fileID: 21300000, guid: e4c23f3ac2282ca40b6bab7ed2c63268, type: 3}
   - {fileID: 21300000, guid: beb2a2d97d7b2cb458f86909952ce960, type: 3}
---- !u!1 &489651613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132572273405, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &489651615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489651613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &505504245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,39 +7607,6 @@ MonoBehaviour:
   playerlist:
   - {fileID: 2137874094}
   - {fileID: 1223723696}
---- !u!1 &536905503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132823493417, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &536905505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536905503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &538828733
 GameObject:
   m_ObjectHideFlags: 0
@@ -10710,39 +10611,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &790422252 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626133022293943, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &790422254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790422252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &803276076
 GameObject:
   m_ObjectHideFlags: 0
@@ -14334,39 +14202,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1080911584 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132117029852, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1080911586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080911584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &1130585508
 GameObject:
   m_ObjectHideFlags: 0
@@ -19218,39 +19053,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1283820107 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626131504790907, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1283820109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283820107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &1305709843
 GameObject:
   m_ObjectHideFlags: 0
@@ -20250,39 +20052,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1354137624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626131236210091, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1354137626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354137624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &1364058938
 GameObject:
   m_ObjectHideFlags: 0
@@ -26437,39 +26206,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1928286927 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132713187348, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1928286929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928286927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef6fb94662fcff469815fc6b5154596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  head: {fileID: 0}
-  torso: {fileID: 0}
-  forearm_r: {fileID: 0}
-  upperarm_r: {fileID: 0}
-  hand_r: {fileID: 0}
-  forearm_l: {fileID: 0}
-  upperarm_l: {fileID: 0}
-  hand_l: {fileID: 0}
-  lowerleg_r: {fileID: 0}
-  upperleg_r: {fileID: 0}
-  foot_r: {fileID: 0}
-  lowerleg_l: {fileID: 0}
-  upperleg_l: {fileID: 0}
-  foot_l: {fileID: 0}
 --- !u!1 &1949225416
 GameObject:
   m_ObjectHideFlags: 0
@@ -29205,6 +28941,21 @@ PrefabInstance:
       propertyPath: pairAxis.Array.data[0].axis.Array.data[3]
       value: LAxis_Vertical_Button_
       objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.data[0].name
+      value: Limb
+      objectReference: {fileID: 0}
     - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: strength
@@ -29229,21 +28980,6 @@ PrefabInstance:
         type: 3}
       propertyPath: playerName
       value: Player A
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.data[0].name
-      value: Limb
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}

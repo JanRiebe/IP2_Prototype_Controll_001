@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5187138b54ff1b7468a7afe67fcdebb7, type: 3}
+  m_Name: Pirate
+  m_EditorClassIdentifier: 
+  face: {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
+  head: {fileID: 21300000, guid: 88ba5396b38241a4db14a0e510151881, type: 3}
+  torso: {fileID: 21300000, guid: 524afdcb0df5f4548a7e17f7e3fffaae, type: 3}
+  forearm: {fileID: 21300000, guid: d7148ab3aa753a043980f7d750c220c2, type: 3}
+  upperarm: {fileID: 21300000, guid: 3173d32f8ed65a345808980976a69b5c, type: 3}
+  fist: {fileID: 21300000, guid: 5cb613146b8bd6b4fb758143cb3f44f6, type: 3}
+  hand: {fileID: 21300000, guid: 0a08a629b36259840a77e03b07df870f, type: 3}
+  lowerleg: {fileID: 21300000, guid: 28badce3776bc32459121729a987d09f, type: 3}
+  upperleg: {fileID: 21300000, guid: 93cd137c77f6e5d409b23b5b251b5723, type: 3}
+  foot: {fileID: 21300000, guid: db415c0aaa8ad204f9967b78024ae1b9, type: 3}

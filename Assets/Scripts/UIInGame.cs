@@ -56,6 +56,7 @@ public class UIInGame : MonoBehaviour
             PlayerStats ps = new PlayerStats();
             ps.playerName = p.name;
             ps.playerHead = go.transform.GetChild(0).GetComponent<Image>();
+            ps.playerHead.sprite = p.character.face;
             ps.starPanel = go.transform.GetChild(1);
             playerStats.Add(ps);
         }
