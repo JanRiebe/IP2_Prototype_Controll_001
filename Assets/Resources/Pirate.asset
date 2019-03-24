@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5187138b54ff1b7468a7afe67fcdebb7, type: 3}
   m_Name: Pirate
   m_EditorClassIdentifier: 
-  face: {fileID: 21300000, guid: d7da298fdbcd1894ca9124826bbdc2b9, type: 3}
+  face: {fileID: 21300000, guid: 7d09aa072146f294c8fe8188a4823b30, type: 3}
   head: {fileID: 21300000, guid: 88ba5396b38241a4db14a0e510151881, type: 3}
   torso: {fileID: 21300000, guid: 524afdcb0df5f4548a7e17f7e3fffaae, type: 3}
   forearm: {fileID: 21300000, guid: d7148ab3aa753a043980f7d750c220c2, type: 3}
