@@ -15,8 +15,10 @@ public class Hand : MovableLimb
     HingeJoint2D _connectionToArm;
     HingeJoint2D _connectionToHandhold;
 
-	// Indicates whether this hand is currently controlled.
-	bool _isControlled;
+    HandAudio handAudio;
+
+    // Indicates whether this hand is currently controlled.
+    bool _isControlled;
 
     override protected void Initialise()
 	{
@@ -34,6 +36,7 @@ public class Hand : MovableLimb
 		// Initialise parent limb with arm.
         parent = _connectionToArm.connectedBody.GetComponent<MovableLimb>();
 
+        handAudio = GetComponent<HandAudio>();
 	}
 
 
@@ -72,9 +75,16 @@ public class Hand : MovableLimb
 		_isControlled = controlled;
 
         if (controlled)
-			SwitchToFK(this);
+        {
+            SwitchToFK(this);
+            handAudio.PlayLetGoSound();
+        }
         else if (_currentHandle)
+        {
             SwitchToIK(this);
+            handAudio.PlayGrabOnSound();
+        }
+
     }
 
 
