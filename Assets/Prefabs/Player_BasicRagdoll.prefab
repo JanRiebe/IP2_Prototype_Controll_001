@@ -1644,8 +1644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ece9d8fde56cc549ac5d5ec7c0d93a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letGoSound: {fileID: 0}
-  grabOnSound: {fileID: 0}
+  letGoSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
+  grabOnSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
 --- !u!1 &5454626132359648756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,8 +1983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ece9d8fde56cc549ac5d5ec7c0d93a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letGoSound: {fileID: 0}
-  grabOnSound: {fileID: 0}
+  letGoSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
+  grabOnSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
 --- !u!1 &5454626132372773881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,8 +2287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ece9d8fde56cc549ac5d5ec7c0d93a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letGoSound: {fileID: 0}
-  grabOnSound: {fileID: 0}
+  letGoSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
+  grabOnSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
 --- !u!1 &5454626132426002489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,8 +2667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ece9d8fde56cc549ac5d5ec7c0d93a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letGoSound: {fileID: 0}
-  grabOnSound: {fileID: 0}
+  letGoSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
+  grabOnSound: {fileID: 8300000, guid: f5f51507800851344bfdadce2c0ae5c8, type: 3}
 --- !u!1 &5454626132572273405
 GameObject:
   m_ObjectHideFlags: 0

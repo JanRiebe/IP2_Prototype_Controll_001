@@ -72,12 +72,15 @@ public class Hand : MovableLimb
     {
 		base.SetControlled(controlled);
 
-		_isControlled = controlled;
+        if(_currentHandle && controlled)
+            handAudio.PlayLetGoSound();
+
+        _isControlled = controlled;
 
         if (controlled)
         {
             SwitchToFK(this);
-            handAudio.PlayLetGoSound();
+            
         }
         else if (_currentHandle)
         {
