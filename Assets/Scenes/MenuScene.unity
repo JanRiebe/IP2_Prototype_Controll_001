@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8017136508564930543, guid: 4fd274b89fc66cb4cb397db8937cc40a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ee3f10dead1f6f24486374f0bb6101e2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd274b89fc66cb4cb397db8937cc40a, type: 3}
 --- !u!1 &585811523
@@ -370,7 +375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ef83e83bc715d44da0de3c0792f9223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: da79fb39b38d4f24da4c8f6c00977e36, type: 2}
 --- !u!4 &889297374
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,21 +1043,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_MinValue
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_Value
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 3036585359906851331, guid: e49c4549f7b7c294892b94e8a1057966,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1078,6 +1067,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_Value
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49c4549f7b7c294892b94e8a1057966, type: 3}
@@ -1147,6 +1151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765389563728317882, guid: c9956f1c07adcdc4eb5621c50058b956,
+        type: 3}
+      propertyPath: gameSceneName
+      value: TestScene_Pip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9956f1c07adcdc4eb5621c50058b956, type: 3}
