@@ -55,6 +55,17 @@ public abstract class MovableLimb: MonoBehaviour
     }
 
 
+    void OnEnable()
+    {
+        PlayerInGame.OnRoundOver += ResetToStartPosition;
+    }
+
+    void OnDisable()
+    {
+        PlayerInGame.OnRoundOver -= ResetToStartPosition;
+    }
+
+
 
     virtual protected void Initialise()
     {
@@ -127,8 +138,12 @@ public abstract class MovableLimb: MonoBehaviour
     }
 
 
-
-    abstract public void ResetToStartPosition();
+    public void ResetToStartPosition()
+    {
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rb.velocity = Vector3.zero;
+    }
 
     //abstract protected bool IsAnyLimbHoldingOn();
 }

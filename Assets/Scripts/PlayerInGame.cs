@@ -55,7 +55,8 @@ public class PlayerInGame : MonoBehaviour
             // If I reached the finish I up my score.
             IncreaseScore();
 
-            OnRoundOver();
+            if (OnRoundOver != null)
+                OnRoundOver();
         }
     }
 
@@ -67,8 +68,6 @@ public class PlayerInGame : MonoBehaviour
         {
 
             IncreaseScore();
-            if(OnRoundOver!= null)
-                OnRoundOver();
 
             // Moving the body back to start position for the next round.
             if (score < GameManager.instance.numberOfRounds)

@@ -70,14 +70,5 @@ public class Body : MovableLimb
 	}
 
 
-    public override void ResetToStartPosition()
-    {
-        transform.position = startPosition;
-        transform.rotation = startRotation;
-        rb.velocity = Vector3.zero;
-        foreach (HingeJoint2D j in hinges)
-        {
-            j.connectedBody.GetComponent<MovableLimb>().ResetToStartPosition();
-        }
-    }
+    
 }
