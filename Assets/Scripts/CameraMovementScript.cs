@@ -4,47 +4,66 @@ using UnityEngine;
 
 public class CameraMovementScript : MonoBehaviour {
 
-
     //We essentially want to set the size to the amount of players that are playing. 
     //You can modify this part of the script to change size and input the appropriate Gameobjects a the start of the level. 
     //It's probably a good idea track camera using the head.
     public List<GameObject> playerlist = new List<GameObject>();
     List<float> positions = new List<float>();
-    float top;
-	
-    //SideNote: Camera goes up, but doesn't go down. It's debateble whether this should be fixed.
+    
+    //Float number used to store central position of players
+    float playerCentre;
+    //the adjusted amount the camera moves up by
+    public float heightAdjustment;
 
-	void Start () {
-		
-	}
+    //Vectors used for cameras position
+    Vector3 cameraStartPosition;
+    Vector3 currentCameraPosition;
+    
+    private void Awake()
+    {
+        //Storing the starting camera position
+        cameraStartPosition = transform.position;
+    }
 	
-	
-	void Update () {
-        
-        
+	void Update ()
+    {
+        //Taking in the current camera position
+         currentCameraPosition = transform.position;
+
         for (int i = 0; i < playerlist.Count; i++)
         {
+            //Storing the the central position for the players
+            playerCentre = playerCentre + playerlist[i].transform.position.y;
             positions.Add(playerlist[i].transform.position.y);
         }
-        top = Max(positions);
-        //the - modifier with top lets us give the player just enough space to grab stuff above them, but not so much that they are instantly knocking opponents out.
-        transform.position = new Vector3(transform.position.x, top - 2.5f, transform.position.z);
         
-	}
+        playerCentre = (playerCentre / playerlist.Count) + heightAdjustment;
 
-    //I had to make a quick function that checks for the highest. I found that setting Max to 4 allows for smoother transitions
-    // from the start of the level to going up inaction.
-    float Max(List<float> list)
-    {
-        float max = 4;
-        for(int i = 1; i < list.Count; i++)
+        //Storing the central position of players
+        Vector3 playerCentreV = new Vector3(transform.position.x, playerCentre, transform.position.z);
+
+        //Moving the cameras position to the central 
+        float t = 0;
+        while (t < 1)
         {
-            if(list[i] > max)
+            t += Time.deltaTime;
+            if(playerCentreV.y > currentCameraPosition.y)
             {
-                max = list[i];
+                transform.position = currentCameraPosition + (playerCentreV - currentCameraPosition) * t;
             }
         }
-
-        return max;
     }
+    
+    //called to reset the cameras position at the bottom
+    void CameraReset()
+    {
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime;
+            transform.position = currentCameraPosition - (currentCameraPosition - cameraStartPosition) * t;
+        }
+
+    }
+
 }
