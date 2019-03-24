@@ -71,12 +71,17 @@ public class InputManager : MonoBehaviour
                 activeLimbs--;
             }
         }
-
         foreach (PairAxis pair in pairAxis)
         {
-
             float horizontalAxis = Input.GetAxis(pair.axis[0] + playerAbbreviation.ToString());
             float verticalAxis = Input.GetAxis(pair.axis[1] + playerAbbreviation.ToString());
+
+            // Adding axises for keyboard input
+            if (pair.axis.Length > 3)
+            {
+                horizontalAxis += Input.GetAxis(pair.axis[2] + playerAbbreviation.ToString());
+                verticalAxis += Input.GetAxis(pair.axis[3] + playerAbbreviation.ToString());
+            }
 
             Vector2 movement = new Vector2(horizontalAxis, verticalAxis);
 
