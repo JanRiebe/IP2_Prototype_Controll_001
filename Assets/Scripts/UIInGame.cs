@@ -10,16 +10,19 @@ public class UIInGame : MonoBehaviour
     public GameObject victoryPanel;
     public Text playerName;
 
-    [Tooltip("The per player UI elements.")]
-    public List<PlayerStats> playerStats;
+    List<PlayerStats> playerStats;
 
     [System.Serializable]
-    public class PlayerStats
+    class PlayerStats
     {
         public string playerName;
         public Image playerHead;
         public Transform starPanel;
     }
+
+    public Transform playerStatsParent;
+    public GameObject playerStatsPrefab;
+
 
     [Tooltip("First number is the fade in duration. Second number is how long it stays faded in. Third number is the fade out duration.")]
     public Vector3 starFadeTimes = new Vector3(0.3f, 3.0f, 1.0f);
@@ -44,27 +47,40 @@ public class UIInGame : MonoBehaviour
 
     private void Start()
     {
-        // Fadign out the player heads at the beggining of the level.
+        // Assigning the player panels and heads.
+        playerStats = new List<PlayerStats>();
+        foreach(PlayerData p in GameManager.instance.GetAllPlayerData())
+        {
+            GameObject go = Instantiate(playerStatsPrefab);
+            go.transform.SetParent(playerStatsParent);
+            PlayerStats ps = new PlayerStats();
+            ps.playerName = p.name;
+            ps.playerHead = go.transform.GetChild(0).GetComponent<Image>();
+            ps.starPanel = go.transform.GetChild(1);
+            playerStats.Add(ps);
+        }
+
+        // Fading out the player heads at the beggining of the level.
         foreach (PlayerStats p in playerStats)
         {
             StartCoroutine(FadeImage(p.playerHead));
         }
     }
 
-    void UpdatePlayerStars(PlayerInGame player, int score)
+    void UpdatePlayerStars(PlayerData player, int score)
     {
         if (score >= 3)
         {
             // Player won
             // Showing win screen
             victoryPanel.SetActive(true);
-            playerName.text = player.playerName;
+            playerName.text = player.name;
         }
 
 
         // Updating stars
         // Finding the stars of the relevant player.
-        PlayerStats pStats = playerStats.Find(x => x.playerName == player.playerName);
+        PlayerStats pStats = playerStats.Find(x => x.playerName == player.name);
         Transform starPanel = pStats.starPanel;
 
         Image star;

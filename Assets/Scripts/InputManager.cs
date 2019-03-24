@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     
-    public enum PlayerAbbr { P1, P2, P3, P4 }
+    
 
     public PlayerAbbr playerAbbreviation;
 
