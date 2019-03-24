@@ -35,9 +35,10 @@ public class Hand : MovableLimb
         parent = _connectionToArm.connectedBody.GetComponent<MovableLimb>();
 
 	}
+    
 
 
-	private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Handle" ||
 		(other.tag == "Player" && other.GetComponent<MovableLimb>().WhichBodyDoYouBelongTo() != WhichBodyDoYouBelongTo()))
@@ -72,7 +73,7 @@ public class Hand : MovableLimb
 		_isControlled = controlled;
 
         if (controlled)
-			SwitchToFK(this);
+            SwitchToFK(this);
         else if (_currentHandle)
             SwitchToIK(this);
     }
@@ -101,7 +102,7 @@ public class Hand : MovableLimb
 
 		base.SwitchToFK(this);
 	}
-
+    
 
 
 }
