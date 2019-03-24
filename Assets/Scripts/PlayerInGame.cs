@@ -44,9 +44,11 @@ public class PlayerInGame : MonoBehaviour
         if(other.tag == "Killer")
         {
             // Tell other players I died.
-            OnDeath(this);
+            if(OnDeath!=null)
+                OnDeath(this);
             Debug.Log(name + " died");
-            OnRoundOver();
+            if(OnRoundOver != null)
+                OnRoundOver();
         }
 		else if(other.tag == "Finish")
         {
@@ -63,8 +65,10 @@ public class PlayerInGame : MonoBehaviour
         // We up the score if someone else died.
         if (deadPlayer != this)
         {
+
             IncreaseScore();
-            OnRoundOver();
+            if(OnRoundOver!= null)
+                OnRoundOver();
 
             // Moving the body back to start position for the next round.
             if (score < GameManager.instance.numberOfRounds)
