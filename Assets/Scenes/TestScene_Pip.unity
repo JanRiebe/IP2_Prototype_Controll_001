@@ -7686,6 +7686,8 @@ MonoBehaviour:
   playerlist:
   - {fileID: 2137874094}
   - {fileID: 1223723696}
+  heightAdjustment: 0
+  speed: 0.1
 --- !u!1 &538828733
 GameObject:
   m_ObjectHideFlags: 0
@@ -8255,6 +8257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: characters.Array.data[2]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765389563728317882, guid: c9956f1c07adcdc4eb5621c50058b956,
+        type: 3}
+      propertyPath: gameSceneName
+      value: TestScene_Pip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9956f1c07adcdc4eb5621c50058b956, type: 3}
@@ -16885,6 +16892,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1215147663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215147666}
+  - component: {fileID: 1215147665}
+  - component: {fileID: 1215147664}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1215147664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215147663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1215147665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215147663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1215147666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215147663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217178786
 GameObject:
   m_ObjectHideFlags: 0
@@ -29020,21 +29093,6 @@ PrefabInstance:
       propertyPath: pairAxis.Array.data[0].axis.Array.data[3]
       value: LAxis_Vertical_Button_
       objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.data[0].name
-      value: Limb
-      objectReference: {fileID: 0}
     - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: strength
@@ -29059,6 +29117,21 @@ PrefabInstance:
         type: 3}
       propertyPath: playerName
       value: Player A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.data[0].name
+      value: Limb
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}
