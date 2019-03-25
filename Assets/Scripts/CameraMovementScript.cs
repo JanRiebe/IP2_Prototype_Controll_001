@@ -4,47 +4,85 @@ using UnityEngine;
 
 public class CameraMovementScript : MonoBehaviour {
 
-
     //We essentially want to set the size to the amount of players that are playing. 
     //You can modify this part of the script to change size and input the appropriate Gameobjects a the start of the level. 
     //It's probably a good idea track camera using the head.
     public List<GameObject> playerlist = new List<GameObject>();
-    List<float> positions = new List<float>();
-    float top;
-	
-    //SideNote: Camera goes up, but doesn't go down. It's debateble whether this should be fixed.
+    
+    //Float number used to store central position of players
+    //public float playerCentre;
+    //the adjusted amount the camera moves up by
+    public float heightAdjustment;
 
-	void Start () {
-		
-	}
-	
-	
-	void Update () {
-        
-        
+    //Vectors used for cameras position
+    Vector3 cameraStartPosition;
+
+    public float speed = 0.1f;
+
+    bool isResettingToStart = false;
+
+    private void Awake()
+    {
+        //Storing the starting camera position
+        cameraStartPosition = transform.position;
+    }
+
+    void OnEnable()
+    {
+        // Subscribing to round over events.
+        PlayerInGame.OnRoundOver += CameraReset;
+    }
+
+    void OnDisable()
+    {
+        PlayerInGame.OnRoundOver -= CameraReset;
+    }
+
+    void Update ()
+    {
+        //Storing the the central position for the players
+        float playerCentre = 0;
         for (int i = 0; i < playerlist.Count; i++)
         {
-            positions.Add(playerlist[i].transform.position.y);
-        }
-        top = Max(positions);
-        //the - modifier with top lets us give the player just enough space to grab stuff above them, but not so much that they are instantly knocking opponents out.
-        transform.position = new Vector3(transform.position.x, top - 2.5f, transform.position.z);
-        
-	}
+            playerCentre = playerCentre + playerlist[i].transform.position.y;
+        }        
+        playerCentre = (playerCentre / playerlist.Count) + heightAdjustment;
+        Vector3 target = new Vector3(transform.position.x, playerCentre, transform.position.z);
 
-    //I had to make a quick function that checks for the highest. I found that setting Max to 4 allows for smoother transitions
-    // from the start of the level to going up inaction.
-    float Max(List<float> list)
-    {
-        float max = 4;
-        for(int i = 1; i < list.Count; i++)
+        //Moving the cameras position to the central, if not currently resetting.   
+        if (playerCentre > transform.position.y && !isResettingToStart)
         {
-            if(list[i] > max)
-            {
-                max = list[i];
-            }
+            Debug.Log((target - transform.position) * Time.deltaTime * speed);
+            transform.position += (target - transform.position) * Time.deltaTime*speed;
         }
-
-        return max;
     }
+
+
+
+
+    
+    //called to reset the cameras position at the bottom
+    void CameraReset()
+    {
+        StartCoroutine(MoveToStart());
+    }
+    
+
+    IEnumerator MoveToStart()
+    {
+        isResettingToStart = true;
+        float t = 0;
+        Vector3 lerpBegin = transform.position;
+        while (t < 1)
+        {
+            t += Time.deltaTime * speed;
+
+            transform.position = Vector3.Lerp(lerpBegin, cameraStartPosition,t);
+
+            yield return null;
+        }
+        transform.position = cameraStartPosition;
+        isResettingToStart = false;
+    }
+
 }
