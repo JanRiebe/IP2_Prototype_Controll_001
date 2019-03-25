@@ -29133,6 +29133,26 @@ PrefabInstance:
       propertyPath: limbs.Array.data[0].name
       value: Limb
       objectReference: {fileID: 0}
+    - target: {fileID: 5454626132291058997, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132359648719, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7152449794167721664, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756000059142721928, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}
     - {fileID: 5454626132291058994, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}

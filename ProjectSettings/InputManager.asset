@@ -553,8 +553,8 @@ InputManager:
     m_Name: LAxis_Vertical_Button_P1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: w
+    negativeButton: w
+    positiveButton: s
     altNegativeButton: 
     altPositiveButton: 
     gravity: 10
