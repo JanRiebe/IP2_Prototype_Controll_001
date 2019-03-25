@@ -952,6 +952,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &54425312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5454626132291059002, guid: 44aafee3105c6af44924ae8671e10f15,
+    type: 3}
+  m_PrefabInstance: {fileID: 5644383372579467478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &63521504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,8 +7491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerlist:
-  - {fileID: 2137874094}
-  - {fileID: 1223723696}
+  - {fileID: 54425312}
+  - {fileID: 1887541341}
   heightAdjustment: 0
   speed: 0.1
 --- !u!1 &538828733
@@ -15591,12 +15597,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1223723696 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132426002489, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273333511}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1228131714
 GameObject:
   m_ObjectHideFlags: 0
@@ -23720,6 +23720,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1887541341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5454626132291059002, guid: 44aafee3105c6af44924ae8671e10f15,
+    type: 3}
+  m_PrefabInstance: {fileID: 1273333511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1888132323
 GameObject:
   m_ObjectHideFlags: 0
@@ -25864,12 +25870,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &2137874094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454626132426002489, guid: 44aafee3105c6af44924ae8671e10f15,
-    type: 3}
-  m_PrefabInstance: {fileID: 5644383372579467478}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2143251422
 GameObject:
   m_ObjectHideFlags: 0
@@ -26423,6 +26423,21 @@ PrefabInstance:
       propertyPath: pairAxis.Array.data[0].axis.Array.data[3]
       value: LAxis_Vertical_Button_
       objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: limbs.Array.data[0].name
+      value: Limb
+      objectReference: {fileID: 0}
     - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: strength
@@ -26447,21 +26462,6 @@ PrefabInstance:
         type: 3}
       propertyPath: playerName
       value: Player A
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: limbs.Array.data[0].name
-      value: Limb
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132291058997, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
