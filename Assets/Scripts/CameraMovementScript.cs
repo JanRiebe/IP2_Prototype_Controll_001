@@ -52,7 +52,6 @@ public class CameraMovementScript : MonoBehaviour {
         //Moving the cameras position to the central, if not currently resetting.   
         if (playerCentre > transform.position.y && !isResettingToStart)
         {
-            Debug.Log((target - transform.position) * Time.deltaTime * speed);
             transform.position += (target - transform.position) * Time.deltaTime*speed;
         }
     }
