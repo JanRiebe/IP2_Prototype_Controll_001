@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5187138b54ff1b7468a7afe67fcdebb7, type: 3}
+  m_Name: Ninja
+  m_EditorClassIdentifier: 
+  face: {fileID: 21300000, guid: 01af9a28ac7f60d43a43a50565066952, type: 3}
+  head: {fileID: 21300000, guid: 8c37f87fce3ea2b48a73c4137f9da770, type: 3}
+  torso: {fileID: 21300000, guid: ccd94d6f984ae49468eb78e3ae07750a, type: 3}
+  forearm: {fileID: 21300000, guid: b0f293b0f6449a242b85c8de51d79c94, type: 3}
+  upperarm: {fileID: 21300000, guid: c7283e37c758bd84eb17e96faa837d21, type: 3}
+  fist: {fileID: 21300000, guid: 3f81250b33eaed74a9f4f6c6c87eb343, type: 3}
+  hand: {fileID: 21300000, guid: 0b6195556d5a2394ea230d426c66e3c2, type: 3}
+  lowerleg: {fileID: 21300000, guid: 7c2cc678fb3c59a42beb3ed52ddc2e1f, type: 3}
+  upperleg: {fileID: 21300000, guid: d2a059e07a6f893499f5fe3fed65e1b1, type: 3}
+  foot: {fileID: 21300000, guid: c8d290271ab8a96489bf0180e3d23e6c, type: 3}

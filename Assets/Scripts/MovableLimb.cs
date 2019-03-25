@@ -144,6 +144,4 @@ public abstract class MovableLimb: MonoBehaviour
         transform.rotation = startRotation;
         rb.velocity = Vector3.zero;
     }
-
-    //abstract protected bool IsAnyLimbHoldingOn();
 }

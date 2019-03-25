@@ -17,7 +17,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +29,11 @@ public class GameManager : MonoBehaviour
 	
 	public int numberOfRounds;
 
-	
+    // Central scene independent collection of active players.
+    public List<PlayerData> activePlayers;
+
+    Character[] characters;
+
 
     private void Awake()
     {
@@ -43,9 +46,18 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(this);
+
+        CreatePlayerDataAtGameStart();
+
+        LoadCharacterObjects();
     }
 
 
+
+    void LoadCharacterObjects()
+    {
+        characters = Resources.LoadAll<Character>("");
+    }
     
 
     public void StartGame()
@@ -64,6 +76,42 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public List<PlayerData> GetAllPlayerData()
+    {
+        return activePlayers;
+    }
+
+    public PlayerData GetPlayerData(PlayerAbbr id)
+    {
+        return activePlayers.Find(p => p.id == id);
+    }
+
+    public int GetNumberOfPlayers()
+    {
+        return activePlayers.Count;
+    }
+
     
+    public void CreatePlayerDataAtGameStart()
+    {
+        activePlayers = new List<PlayerData>();
+        int wantedNumberOfPlayers = 2;
+        for(int i=0;i<wantedNumberOfPlayers;i++)
+        {
+            PlayerData p = new PlayerData();
+            p.id = (PlayerAbbr)i;
+            p.name = p.id.ToString();
+            p.score = 0;
+            p.character = null;
+            activePlayers.Add(p);
+        }
+
+    }
+
+    public Character[] GetCharacters()
+    {
+        return characters;
+    }
+
 }
 
