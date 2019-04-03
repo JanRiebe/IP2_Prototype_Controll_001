@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(menuSceneName);
     }
 
+    
 
     public List<PlayerData> GetAllPlayerData()
     {

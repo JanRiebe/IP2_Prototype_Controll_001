@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class UIInGame : MonoBehaviour
 {
-    
+
+    public GameObject pauseMenuPanel;
     public GameObject victoryPanel;
     public Text playerName;
 
@@ -37,6 +38,7 @@ public class UIInGame : MonoBehaviour
         // Subscibing to player score update.
         PlayerInGame.OnScoreUpdated += UpdatePlayerStars;
         PlayerInGame.OnGameOver += OnGameOver;
+        GamePauser.OnGamePaused += ShowPauseMenu;
     }
 
     void OnDisable()
@@ -44,6 +46,7 @@ public class UIInGame : MonoBehaviour
         // Unsubscibing to player score update.
         PlayerInGame.OnScoreUpdated -= UpdatePlayerStars;
         PlayerInGame.OnGameOver -= OnGameOver;
+        GamePauser.OnGamePaused -= ShowPauseMenu;
     }
 
 
@@ -115,16 +118,24 @@ public class UIInGame : MonoBehaviour
         StartCoroutine(FadeImage(pStats.playerHead));
         
     }
+
+
+
+    public void ShowPauseMenu(bool show)
+    {
+        pauseMenuPanel.SetActive(show);
+    }
+
     
-	
-	public void OnReplayButtonPressed()
+
+    public void OnReplayButtonPressed()
 	{
-		GameManager.instance.StartGame();
+        GameManager.instance.StartGame();
 	}
 
 	public void OnMenuButtonPressed()
-	{
-		GameManager.instance.GameOver();
+    {
+        GameManager.instance.GameOver();
 	}
 
 
