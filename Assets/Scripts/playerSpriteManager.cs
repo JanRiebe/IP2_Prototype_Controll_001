@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerSpriteManager : MonoBehaviour
 {
-    public PlayerAbbr id;
+    PlayerAbbr id;
 
     public SpriteRenderer head;
     public SpriteRenderer torso;
@@ -23,6 +23,9 @@ public class playerSpriteManager : MonoBehaviour
 
     private void Start()
     {
+        // Gettin my id from the input manager. (I assume it won't be forgotten to set it there, cause else the characters won't respond.)
+        id = transform.parent.GetComponent<InputManager>().playerAbbreviation;
+
         PlayerData player = GameManager.instance.GetPlayerData(id);
 
         if (player.character == null)

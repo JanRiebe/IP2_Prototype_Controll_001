@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22871,6 +22871,11 @@ PrefabInstance:
       propertyPath: playerName
       value: Player_B
       objectReference: {fileID: 0}
+    - target: {fileID: 425125434616654888, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2783164140048747489, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: pairAxis.Array.data[0].axis.Array.size
@@ -35088,6 +35093,16 @@ PrefabInstance:
       propertyPath: pairAxis.Array.data[0].axis.Array.data[3]
       value: LAxis_Vertical_Button_
       objectReference: {fileID: 0}
+    - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: strength
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132372773882, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: strength
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5644383372726998283, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: limbs.Array.size
@@ -35102,16 +35117,6 @@ PrefabInstance:
         type: 3}
       propertyPath: limbs.Array.data[0].name
       value: Limb
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454626132566519413, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: strength
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454626132372773882, guid: 44aafee3105c6af44924ae8671e10f15,
-        type: 3}
-      propertyPath: strength
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5454626132291058995, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}

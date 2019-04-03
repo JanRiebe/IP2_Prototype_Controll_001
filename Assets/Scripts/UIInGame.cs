@@ -36,12 +36,14 @@ public class UIInGame : MonoBehaviour
     {
         // Subscibing to player score update.
         PlayerInGame.OnScoreUpdated += UpdatePlayerStars;
+        PlayerInGame.OnGameOver += OnGameOver;
     }
 
     void OnDisable()
     {
         // Unsubscibing to player score update.
         PlayerInGame.OnScoreUpdated -= UpdatePlayerStars;
+        PlayerInGame.OnGameOver -= OnGameOver;
     }
 
 
@@ -68,21 +70,29 @@ public class UIInGame : MonoBehaviour
         }
     }
 
-    void UpdatePlayerStars(PlayerData player, int score)
+
+
+    void OnGameOver(PlayerData winner)
     {
-        if (score >= 3)
-        {
-            // Player won
-            // Showing win screen
-            victoryPanel.SetActive(true);
-            playerName.text = player.name;
-        }
+        Debug.Log("winner "+winner.name + " " + winner.id + " " + winner.score);
+        // Showing win screen
+        victoryPanel.SetActive(true);
+        playerName.text = winner.name;
+
+        playerStatsParent.gameObject.SetActive(false);
+    }
 
 
+
+
+    void UpdatePlayerStars(PlayerData player)
+    {
+        Debug.Log("update stars "+player.name + " " + player.id + " " + player.score);
         // Updating stars
         // Finding the stars of the relevant player.
         PlayerStats pStats = playerStats.Find(x => x.playerName == player.name);
         Transform starPanel = pStats.starPanel;
+
 
         Image star;
         Color invisible = new Color(0, 0, 0, 0);
@@ -91,7 +101,7 @@ public class UIInGame : MonoBehaviour
         {
             // Getting the star image.
             star = starPanel.GetChild(i).GetComponent<Image>();
-            if (i < score)
+            if (i < player.score)
             {
                 // Activating the star by making the image visible.
                 star.color = Color.white;
@@ -102,9 +112,10 @@ public class UIInGame : MonoBehaviour
                 // Deactivating the star by making the image invisible.
                 star.color = invisible;
         }
-        
+
         // Fading the player head.
         StartCoroutine(FadeImage(pStats.playerHead));
+        
     }
     
 	
