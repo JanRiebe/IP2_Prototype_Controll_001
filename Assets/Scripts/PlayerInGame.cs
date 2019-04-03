@@ -29,8 +29,7 @@ public class PlayerInGame : MonoBehaviour
         data = GameManager.instance.GetPlayerData(id);
         // Resetting the score at beginning of level.
         data.score = 0;
-
-        Debug.Log("I'm " + name + " and I belong to player " + data.name);
+        data.score = 0;
     }
 
 

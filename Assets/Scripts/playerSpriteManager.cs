@@ -24,7 +24,7 @@ public class playerSpriteManager : MonoBehaviour
     private void Start()
     {
         // Gettin my id from the input manager. (I assume it won't be forgotten to set it there, cause else the characters won't respond.)
-        id = transform.parent.GetComponent<InputManager>().playerAbbreviation;
+        id = GetComponent<InputManager>().playerAbbreviation;
 
         PlayerData player = GameManager.instance.GetPlayerData(id);
 
@@ -37,16 +37,16 @@ public class playerSpriteManager : MonoBehaviour
         torso.sprite = character.torso;
         forearm_r.sprite = character.forearm;
         upperarm_r.sprite = character.upperarm;
-        hand_r.sprite = character.hand;
+        hand_r.sprite = character.hand_right;
         forearm_l.sprite = character.forearm;
         upperarm_l.sprite = character.upperarm;
-        hand_l.sprite = character.hand;
+        hand_l.sprite = character.hand_left;
         lowerleg_l.sprite = character.lowerleg;
         upperleg_l.sprite = character.upperleg;
-        foot_l.sprite = character.foot;
+        foot_l.sprite = character.foot_left;
         lowerleg_r.sprite = character.lowerleg;
         upperleg_r.sprite = character.upperleg;
-        foot_r.sprite = character.foot;
+        foot_r.sprite = character.foot_right;
 
         
     }

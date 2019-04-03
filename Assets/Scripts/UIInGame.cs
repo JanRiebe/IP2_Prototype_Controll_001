@@ -74,7 +74,6 @@ public class UIInGame : MonoBehaviour
 
     void OnGameOver(PlayerData winner)
     {
-        Debug.Log("winner "+winner.name + " " + winner.id + " " + winner.score);
         // Showing win screen
         victoryPanel.SetActive(true);
         playerName.text = winner.name;
@@ -87,7 +86,6 @@ public class UIInGame : MonoBehaviour
 
     void UpdatePlayerStars(PlayerData player)
     {
-        Debug.Log("update stars "+player.name + " " + player.id + " " + player.score);
         // Updating stars
         // Finding the stars of the relevant player.
         PlayerStats pStats = playerStats.Find(x => x.playerName == player.name);
