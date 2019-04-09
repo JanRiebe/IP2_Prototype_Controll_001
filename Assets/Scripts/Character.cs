@@ -8,11 +8,12 @@ public class Character : ScriptableObject
     public Sprite torso;
     public Sprite forearm;
     public Sprite upperarm;
-    public Sprite fist;
-    public Sprite hand;
+    public Sprite hand_left;
+    public Sprite hand_right;
     public Sprite lowerleg;
     public Sprite upperleg;
-    public Sprite foot;
+    public Sprite foot_left;
+    public Sprite foot_right;
 
 
 }

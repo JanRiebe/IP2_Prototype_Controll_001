@@ -17,8 +17,9 @@ MonoBehaviour:
   torso: {fileID: 21300000, guid: ccd94d6f984ae49468eb78e3ae07750a, type: 3}
   forearm: {fileID: 21300000, guid: b0f293b0f6449a242b85c8de51d79c94, type: 3}
   upperarm: {fileID: 21300000, guid: c7283e37c758bd84eb17e96faa837d21, type: 3}
-  fist: {fileID: 21300000, guid: 3f81250b33eaed74a9f4f6c6c87eb343, type: 3}
-  hand: {fileID: 21300000, guid: 0b6195556d5a2394ea230d426c66e3c2, type: 3}
+  hand_left: {fileID: 21300000, guid: 99e641241f8857c45afde0df4cdb149e, type: 3}
+  hand_right: {fileID: 21300000, guid: 6a892dc14b22da84899369cf6951d18c, type: 3}
   lowerleg: {fileID: 21300000, guid: 7c2cc678fb3c59a42beb3ed52ddc2e1f, type: 3}
   upperleg: {fileID: 21300000, guid: d2a059e07a6f893499f5fe3fed65e1b1, type: 3}
-  foot: {fileID: 21300000, guid: c8d290271ab8a96489bf0180e3d23e6c, type: 3}
+  foot_left: {fileID: 21300000, guid: 3dd519f97a0a29042a93dd74e8bfb4ae, type: 3}
+  foot_right: {fileID: 21300000, guid: aff1d8ed936826444a6cda828580602a, type: 3}
