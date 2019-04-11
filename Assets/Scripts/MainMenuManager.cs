@@ -10,4 +10,9 @@ public class MainMenuManager : MonoBehaviour
         GameManager.instance.StartGame();
     }
 
+    public void OnQuitButtonPressed()
+    {
+        Application.Quit();
+    }
+
 }
