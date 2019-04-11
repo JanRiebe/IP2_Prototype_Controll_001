@@ -22,7 +22,7 @@ public class Body : MovableLimb
 
 		// When the player stops controlling the body, it will hold its last position.
 		// When the body is set controlled it will stop holding its position.
-		HoldPosition(!controlled);
+		//HoldPosition(!controlled);
     }
 
 
@@ -33,7 +33,7 @@ public class Body : MovableLimb
 		if(connected != null)
 			connected.enabled = true;
 		// If any of the other limbs take controll, the body stops holing on to it's position.
-		HoldPosition(false);
+		//HoldPosition(false);
 	}
 
 
@@ -57,12 +57,13 @@ public class Body : MovableLimb
 		return null;
 	}
 
-
+    /*
 	void HoldPosition(bool hold)
 	{
 		targetJoint.target = transform.position;
 		targetJoint.enabled = hold;
 	}
+    */
 
 	override public Body WhichBodyDoYouBelongTo()
 	{
