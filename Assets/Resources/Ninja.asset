@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Ninja
   m_EditorClassIdentifier: 
   face: {fileID: 21300000, guid: 01af9a28ac7f60d43a43a50565066952, type: 3}
-  head: {fileID: 21300000, guid: 8c37f87fce3ea2b48a73c4137f9da770, type: 3}
+  head: {fileID: 21300000, guid: 61fd2acf997f8364fb8afdaf7020ba90, type: 3}
   torso: {fileID: 21300000, guid: ccd94d6f984ae49468eb78e3ae07750a, type: 3}
   forearm: {fileID: 21300000, guid: b0f293b0f6449a242b85c8de51d79c94, type: 3}
   upperarm: {fileID: 21300000, guid: c7283e37c758bd84eb17e96faa837d21, type: 3}
-  hand_left: {fileID: 21300000, guid: 99e641241f8857c45afde0df4cdb149e, type: 3}
-  hand_right: {fileID: 21300000, guid: 6a892dc14b22da84899369cf6951d18c, type: 3}
+  hand_left: {fileID: 21300000, guid: 6a7dad684a0fea2429608bd20557a9e7, type: 3}
+  hand_right: {fileID: 21300000, guid: d8eaf0d5cf21e494ea9d0102cc0234f1, type: 3}
   lowerleg: {fileID: 21300000, guid: 7c2cc678fb3c59a42beb3ed52ddc2e1f, type: 3}
   upperleg: {fileID: 21300000, guid: d2a059e07a6f893499f5fe3fed65e1b1, type: 3}
-  foot_left: {fileID: 21300000, guid: 3dd519f97a0a29042a93dd74e8bfb4ae, type: 3}
-  foot_right: {fileID: 21300000, guid: aff1d8ed936826444a6cda828580602a, type: 3}
+  foot_left: {fileID: 21300000, guid: 8ba5ec0b2052d404fb1de4f6b3f481a5, type: 3}
+  foot_right: {fileID: 21300000, guid: 82465ce0b62a7b049a7ddbf51eb530ab, type: 3}
