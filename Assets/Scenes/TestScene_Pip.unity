@@ -24778,6 +24778,11 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.394
       objectReference: {fileID: 0}
+    - target: {fileID: 5454626132359648718, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5454626132566519371, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -25141,6 +25146,21 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132291058996, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132372773873, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132566519368, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}
@@ -39840,6 +39860,11 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.774
       objectReference: {fileID: 0}
+    - target: {fileID: 5454626132359648718, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5454626132566519371, guid: 44aafee3105c6af44924ae8671e10f15,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -40014,6 +40039,21 @@ PrefabInstance:
         type: 3}
       propertyPath: playerName
       value: Player A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132291058996, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132372773873, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454626132566519368, guid: 44aafee3105c6af44924ae8671e10f15,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454626132359648716, guid: 44aafee3105c6af44924ae8671e10f15, type: 3}
