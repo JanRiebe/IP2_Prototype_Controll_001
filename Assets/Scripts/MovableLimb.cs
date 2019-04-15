@@ -138,9 +138,8 @@ public abstract class MovableLimb: MonoBehaviour
     }
 
 
-    public void ResetToStartPosition()
+    public virtual void ResetToStartPosition()
     {
-        SetControlled(false);
         transform.position = startPosition;
         transform.rotation = startRotation;
         rb.velocity = Vector3.zero;

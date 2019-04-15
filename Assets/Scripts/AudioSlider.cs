@@ -11,12 +11,20 @@ public class AudioSlider : MonoBehaviour
 
 	Slider slider;
 
-	void Start()
+    float sliderLength;
+    float mixerLength = 80;
+    float stretchFactor;
+
+    void Start()
 	{
 		slider = GetComponent<Slider>();
-		float mixerValue;
+        sliderLength = slider.maxValue - slider.minValue;
+        stretchFactor = mixerLength / sliderLength;
+
+        float mixerValue;
 		mixer.GetFloat(audioMixerParameterName, out mixerValue);
 		slider.value = StretchBackToSlider(mixerValue);
+
 	}
 
 	public void OnVolumeSliderMoved(float value)
@@ -26,20 +34,15 @@ public class AudioSlider : MonoBehaviour
 
 
 	float StretchToMixer(float sliderVal)
-	{
-		
-		float sliderLength = slider.maxValue - slider.minValue;
-		float mixerLength = 80;
-		float stretchFactor = mixerLength / sliderLength;
-		float zeroedSliderVal = sliderVal - slider.maxValue;
-		return zeroedSliderVal * stretchFactor;
-	}
+	{	
+        float posSliderVal = sliderVal - slider.minValue;
+        if (posSliderVal == 0)
+            return -80.0f;
+        return Mathf.Log10(posSliderVal / sliderLength) * mixerLength;
+    }
 
 	float StretchBackToSlider(float mixerVal)
 	{
-		float sliderLength = slider.maxValue - slider.minValue;
-		float mixerLength = 80;
-		float stretchFactor = sliderLength / mixerLength;
-		return mixerVal * stretchFactor + slider.maxValue;
+        return Mathf.Pow(10,(mixerVal+mixerLength) / mixerLength-1) * sliderLength + slider.minValue;
 	}
 }
