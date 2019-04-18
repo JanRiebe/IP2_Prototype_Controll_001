@@ -78,10 +78,6 @@ public class PlayerInGame : MonoBehaviour
 
             IncreaseScore();
 
-            // Moving the body back to start position for the next round.
-            if (data.score < GameManager.instance.numberOfRounds)
-                GetComponent<Body>().ResetToStartPosition();
-            // If the game is over, there is no need to move back to the start.
         }
     }
 

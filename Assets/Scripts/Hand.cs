@@ -114,5 +114,12 @@ public class Hand : MovableLimb
 	}
 
 
+    public override void ResetToStartPosition()
+    {
+        base.ResetToStartPosition();
+        _currentHandle = null;
+        SetControlled(false);
+        SwitchToFK(this);
+    }
 
 }
