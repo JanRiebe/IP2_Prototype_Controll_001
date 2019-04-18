@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5187138b54ff1b7468a7afe67fcdebb7, type: 3}
+  m_Name: Robot1
+  m_EditorClassIdentifier: 
+  face: {fileID: 21300000, guid: 46a6dbc9c7656cf43bea3a7358b2f5db, type: 3}
+  head: {fileID: 21300000, guid: 4acc46968f464d94c97cc0ab083ff490, type: 3}
+  torso: {fileID: 21300000, guid: ee13e3d1dbdaf7047b5386d69d4be3b0, type: 3}
+  forearm: {fileID: 21300000, guid: a9cd74875fb503040b763f7c44c08f0d, type: 3}
+  upperarm: {fileID: 21300000, guid: 8f4f5dafc911a7d41bdf5c31052e7547, type: 3}
+  hand_left: {fileID: 21300000, guid: 6a7dad684a0fea2429608bd20557a9e7, type: 3}
+  hand_right: {fileID: 21300000, guid: d8eaf0d5cf21e494ea9d0102cc0234f1, type: 3}
+  lowerleg: {fileID: 21300000, guid: 4d470bc5e569a3c42a077e510f522eaf, type: 3}
+  upperleg: {fileID: 21300000, guid: 88aa15b0206c15e43900e6d3b8ce2230, type: 3}
+  foot_left: {fileID: 21300000, guid: 8ba5ec0b2052d404fb1de4f6b3f481a5, type: 3}
+  foot_right: {fileID: 21300000, guid: 82465ce0b62a7b049a7ddbf51eb530ab, type: 3}
