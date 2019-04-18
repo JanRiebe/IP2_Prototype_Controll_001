@@ -42,16 +42,15 @@ public class CameraMovementScript : MonoBehaviour
     {
         //Storing the the central position for the players
         float playerCentre = 0;
-        for (int i = 0; i < playerlist.Count; i++)
+
+        if(playerlist[0].transform.position.y > playerlist[1].transform.position.y)
         {
-
-
-            if (playerlist[i].transform.position.y > transform.position.y)
-            {
-                highestPlayer = playerlist[i].transform.position.y;
-            }
-
+            highestPlayer = playerlist[0].transform.position.y;
+        }else if (playerlist[1].transform.position.y > playerlist[0].transform.position.y)
+        {
+            highestPlayer = playerlist[1].transform.position.y;
         }
+
         playerCentre = highestPlayer;
 
         Vector3 target = new Vector3(transform.position.x, playerCentre, transform.position.z);
