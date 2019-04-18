@@ -77,6 +77,8 @@ public class UIInGame : MonoBehaviour
 
     void OnGameOver(PlayerData winner)
     {
+        // Set winning player head.
+        victoryPanel.transform.GetChild(0).GetComponent<Image>().sprite = winner.character.face;
         // Showing win screen
         victoryPanel.SetActive(true);
         playerName.text = winner.name;
