@@ -9,7 +9,7 @@ public abstract class MovableLimb: MonoBehaviour
 	
 
 
-
+    /*
 
     [System.Serializable]
     public class Attack
@@ -23,7 +23,7 @@ public abstract class MovableLimb: MonoBehaviour
 
     [Tooltip("How forces act on the limb over time when the player makes an input.")]
     public Attack attack;
-
+    */
     
     [SerializeField]
     float strength;
@@ -129,14 +129,14 @@ public abstract class MovableLimb: MonoBehaviour
 	{
 		return parent.WhichBodyDoYouBelongTo();
 	}
-
+    /*
     float AttackRightNow()
     {
         float timePassed = Time.time - timeOfTakingControl;
         float progress = Mathf.Min(1.0f, timePassed / attack.attackTime);
         return attack.attackOverTime.Evaluate(progress);
     }
-
+    */
 
     public virtual void ResetToStartPosition()
     {

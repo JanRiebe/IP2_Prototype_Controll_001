@@ -21,7 +21,7 @@ public class BirdSpawner : MonoBehaviour
         if(nextSpawnIn <= 0)
         {
             nextSpawnIn = Random.Range(spawnRandomBetween.x, spawnRandomBetween.y);
-            Instantiate(BirdPrefab, new Vector3(-13, Camera.main.transform.position.y + Random.Range(-5,5),-0.5f), Quaternion.identity);
+            Instantiate(BirdPrefab, new Vector3(-13, Camera.main.transform.position.y + Random.Range(-5,5), Camera.main.transform.position.z+0.5f), Quaternion.identity);
         }
     }
 }
