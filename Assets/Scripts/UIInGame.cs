@@ -130,11 +130,13 @@ public class UIInGame : MonoBehaviour
 
     public void OnReplayButtonPressed()
 	{
+        GetComponent<GamePauser>().Pause(false);
         GameManager.instance.StartGame();
 	}
 
 	public void OnMenuButtonPressed()
     {
+        GetComponent<GamePauser>().Pause(false);
         GameManager.instance.GameOver();
 	}
 
