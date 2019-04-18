@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flying: 1
-  speed: 1
+  speed: 3
 --- !u!58 &281476922776482060
 CircleCollider2D:
   m_ObjectHideFlags: 0
