@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 870543876ea6e8e49ac840ce45f0d9ce
   - enabled: 1
-    path: Assets/Scenes/TestScene_Pip.unity
-    guid: 8edb1cb1f35499b4894c36bc21b231cc
+    path: Assets/Scenes/ClimbingScene.unity
+    guid: 389d9b9ee1ff65943bfffdc9640950a8
   m_configObjects: {}
