@@ -2848,21 +2848,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_MinValue
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
-        type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3036585359592407366, guid: e49c4549f7b7c294892b94e8a1057966,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -2882,6 +2867,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036585360181631023, guid: e49c4549f7b7c294892b94e8a1057966,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49c4549f7b7c294892b94e8a1057966, type: 3}
@@ -2961,7 +2961,7 @@ PrefabInstance:
     - target: {fileID: 2765389563728317882, guid: c9956f1c07adcdc4eb5621c50058b956,
         type: 3}
       propertyPath: gameSceneName
-      value: TestScene_Pip
+      value: ClimbingScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9956f1c07adcdc4eb5621c50058b956, type: 3}
