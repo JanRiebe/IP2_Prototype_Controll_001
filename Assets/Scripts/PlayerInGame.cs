@@ -20,6 +20,8 @@ public class PlayerInGame : MonoBehaviour
     public delegate void EmptyDelegate();
     public static event EmptyDelegate OnRoundOver;
 
+    private Shake shake;
+
 
     private void Start()
     {
@@ -30,6 +32,8 @@ public class PlayerInGame : MonoBehaviour
         // Resetting the score at beginning of level.
         data.score = 0;
         data.score = 0;
+
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
     }
 
 
@@ -55,6 +59,7 @@ public class PlayerInGame : MonoBehaviour
             // Tell other players I died.
             if(OnDeath!=null)
                 OnDeath(this);
+            shake.CamShake();
 
             if(OnRoundOver != null)
                 OnRoundOver();

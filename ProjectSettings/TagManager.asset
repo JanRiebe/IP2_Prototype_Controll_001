@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Handle
   - Killer
+  - ScreenShake
   layers:
   - Default
   - TransparentFX
