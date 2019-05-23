@@ -59,7 +59,7 @@ public class PlayerInGame : MonoBehaviour
             // Tell other players I died.
             if(OnDeath!=null)
                 OnDeath(this);
-            shake.CamShake();
+            shake.Shaker(200f);
 
             if(OnRoundOver != null)
                 OnRoundOver();
